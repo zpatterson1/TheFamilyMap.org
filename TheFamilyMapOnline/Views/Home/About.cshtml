@@ -1,0 +1,19 @@
+﻿@model TheFamilyMapOnline.Models.Overview
+    @using System.Web.Mvc;
+@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+@using (Html.BeginForm("about", "home", FormMethod.Post))
+{
+    @Html.TextBoxFor(s => s.test)
+}
+
+<span> @Model.test</span>
+
+
+
+
+<p>Use this area to provide additional information.</p>
