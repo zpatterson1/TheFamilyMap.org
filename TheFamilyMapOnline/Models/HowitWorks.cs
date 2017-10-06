@@ -5,9 +5,8 @@ using System.Web;
 
 namespace TheFamilyMapOnline.Models
 {
-    public class Overview
+    public class HowitWorks
     {
-        public string test;
 
     }
 }

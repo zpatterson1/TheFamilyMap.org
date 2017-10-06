@@ -9,28 +9,38 @@ namespace TheFamilyMapOnline.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult index()
         {
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult HowitWorks()
         {
             ViewBag.Message = "Your application description page.";
             Overview S = new Overview();
-            S.test=Convert.ToString('1');
+            S.test = Convert.ToString('1');
             return View(S);
         }
 
-        public ActionResult Contact()
+        public ActionResult Traning()
         {
             ViewBag.Message = "Your contact page.";
 
             return View();
         }
-        public ActionResult Overview()
+        public ActionResult Research()
         {
-            
+
+            return View();
+        }
+        public ActionResult Clients()
+        {
+            ViewBag.Message = " ";
+            return View();
+        }
+        public ActionResult ContactUs ()
+        {
+            ViewBag.Message = "";
             return View();
         }
     }
