@@ -143,11 +143,16 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HowitWorksController.cs" />
+    <Compile Include="Controllers\ResearchController.cs" />
+    <Compile Include="Controllers\TrainingController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\HowitWorks.cs" />
     <Compile Include="Models\Overview.cs" />
+    <Compile Include="Models\Research.cs" />
+    <Compile Include="Models\Training.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -192,6 +197,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\HowitWorks\" />
+    <Folder Include="Views\Research\" />
+    <Folder Include="Views\Training\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

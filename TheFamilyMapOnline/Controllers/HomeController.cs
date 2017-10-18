@@ -14,6 +14,11 @@ namespace TheFamilyMapOnline.Controllers
             return View();
         }
 
+        public ActionResult Overview()
+        {
+            return View();
+        }
+
         public ActionResult HowitWorks()
         {
             ViewBag.Message = "Your application description page.";
@@ -24,7 +29,7 @@ namespace TheFamilyMapOnline.Controllers
 
         public ActionResult Traning()
         {
-            ViewBag.Message = "Your contact page.";
+            
 
             return View();
         }
@@ -35,12 +40,12 @@ namespace TheFamilyMapOnline.Controllers
         }
         public ActionResult Clients()
         {
-            ViewBag.Message = " ";
+           
             return View();
         }
         public ActionResult ContactUs ()
         {
-            ViewBag.Message = "";
+            ViewBag.Message = " Your contact page.";
             return View();
         }
     }
