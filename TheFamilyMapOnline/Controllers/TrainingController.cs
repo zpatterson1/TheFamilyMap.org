@@ -11,17 +11,20 @@ namespace TheFamilyMapOnline.Controllers
         // GET: Training
         public ActionResult Index()
         {
-            return View();
+            return PartialView();
         }
-        // GET: Annual Renewal 
+
+        // GET: Annual Renewal
+        
         public ActionResult AnnualRenewal()
         {
-            return View();
+            return PartialView();
         }
+
         // GET: Arkansas Providers
         public ActionResult ArkansasProviders()
         {
-            return View();
+            return PartialView();
         }
     }
 

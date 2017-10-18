@@ -9,33 +9,37 @@ namespace TheFamilyMapOnline.Controllers
     public class HowitWorksController : Controller
     {
         // GET: HowitWorks
+
         public ActionResult Index()
         {
             return View();
         }
 
         // GET: HowitWorks/Content
+
         public ActionResult Content()
         {
-            return View();
+            return PartialView();
         }
 
         // GET: HowitWorks/Format
+
         public ActionResult Format()
         {
-            return View();
+            return PartialView();
         }
 
         // GET: HowitWorks/StepstoAdapting
 
         public ActionResult StepstoAdapting()
             {
-                return View();
+                return PartialView();
             }
-     // GET: HowitWorks/FAQS
+        // GET: HowitWorks/FAQS
+
          public ActionResult FAQS()
             {
-                    return View();
+            return PartialView(); 
             }
 
       }
