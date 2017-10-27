@@ -9,7 +9,7 @@ namespace TheFamilyMapOnline.Controllers
     public class ResearchController : Controller
     {
         // GET: Research
-        public ActionResult Index()
+        public ActionResult Research()
         {
             return View();
         }
@@ -39,30 +39,30 @@ namespace TheFamilyMapOnline.Controllers
         // GET: Intervention Tool
         public ActionResult InterventionTool()
         {
-            return View();
+            return PartialView();
         }
         // GET: Home Visting
         
         public ActionResult HomeVisting()
         {
-            return View();
+            return PartialView();
         }
         // GET: Programs/Agencies
 
         public ActionResult ProgramsAgencies()
         {
-            return View();
+            return PartialView();
         }
 
         // GET: Teachers & Parents
         public ActionResult TeachersParents()
         {
-            return View();
+            return PartialView();
         }
         // GET: Development Team 
         public ActionResult DevelopmentTeam()
         {
-            return View();
+            return PartialView();
         }
 
     }

@@ -9,9 +9,9 @@ namespace TheFamilyMapOnline.Controllers
     public class TrainingController : Controller
     {
         // GET: Training
-        public ActionResult Index()
+        public ActionResult Training()
         {
-            return PartialView();
+            return View();
         }
 
         // GET: Annual Renewal

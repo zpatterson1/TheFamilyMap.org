@@ -10,7 +10,7 @@ namespace TheFamilyMapOnline.Controllers
     {
         // GET: HowitWorks
 
-        public ActionResult Index()
+        public ActionResult HowitWorks()
         {
             return View();
         }

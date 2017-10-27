@@ -7,8 +7,16 @@ namespace TheFamilyMapOnline.Models
 {
     public class Overview
     {
+        // textbox for...
         public string test;
+        public string MapInventories;
+        public string MapFeatures;
+        public string ThreeVersions;
+
+        
     }
+
+    
     // GET & SET: The Username and passwword from user.
     public class MemberLogin
     {

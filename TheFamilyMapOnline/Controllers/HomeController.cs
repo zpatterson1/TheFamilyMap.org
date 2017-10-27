@@ -9,40 +9,45 @@ namespace TheFamilyMapOnline.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult index()
+        // GET: Index.
+        public ActionResult Index()
         {
             return View();
         }
-
+        // GET: Overview.
         public ActionResult Overview()
         {
-            return View();
-        }
-
-        public ActionResult HowitWorks()
-        {
-            ViewBag.Message = "Your application description page.";
-            Overview S = new Overview();
+            ViewBag.Message = " Your application description page.";
+            Overview S = new Models.Overview();
             S.test = Convert.ToString('1');
             return View(S);
         }
-
-        public ActionResult Traning()
+        //GET: HowitWorks.
+        public ActionResult HowitWorks()
         {
-            
-
+            ViewBag.Message = "Your application instruction page.";
+            HowitWorks H = new Models.HowitWorks();
+            H.test = Convert.ToString('2');
+            return View(H);
+        }
+        // GET: Training.
+        public ActionResult Training()
+        {
             return View();
         }
+        // GET: Research.
         public ActionResult Research()
         {
 
             return View();
         }
+        // GET:Clients.
         public ActionResult Clients()
         {
            
             return View();
         }
+        // GET:Contact.
         public ActionResult ContactUs ()
         {
             ViewBag.Message = " Your contact page.";

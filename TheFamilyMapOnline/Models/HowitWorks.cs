@@ -7,14 +7,17 @@ using System.Web.Routing;
 namespace TheFamilyMapOnline.Models
 {
     public class HowitWorks
+
     {
-       
+        public string test;
+
         public class Format
         { 
 
 
         }
         public class StepstoAdapt
+    
         {
 
         }
@@ -23,7 +26,7 @@ namespace TheFamilyMapOnline.Models
         {
 
         }
-
+        
     }
    
 }
