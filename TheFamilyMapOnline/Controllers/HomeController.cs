@@ -7,7 +7,7 @@ using TheFamilyMapOnline.Models;
 
 namespace TheFamilyMapOnline.Controllers
 {
-    public class HomeController : Controller
+    public class homeController : Controller
     {
         // GET: Index.
         public ActionResult Index()
@@ -18,7 +18,7 @@ namespace TheFamilyMapOnline.Controllers
         public ActionResult Overview()
         {
             ViewBag.Message = " Your application description page.";
-            Overview S = new Models.Overview();
+            overview S = new Models.overview();
             S.test = Convert.ToString('1');
             return View(S);
         }

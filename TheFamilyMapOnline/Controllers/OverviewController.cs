@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace TheFamilyMapOnline.Controllers
 {
-    public class OverviewController : Controller
+    public class overviewController : Controller
     {
         // GET: Overview
         public ActionResult Overview()

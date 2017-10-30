@@ -5,7 +5,7 @@ using System.Web;
 
 namespace TheFamilyMapOnline.Models
 {
-    public class Research
+    public class research
     {
 
         //public class 

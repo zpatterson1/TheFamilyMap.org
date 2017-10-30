@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace TheFamilyMapOnline.Controllers
 {
-    public class ResearchController : Controller
+    public class researchController : Controller
     {
         // GET: Research
         public ActionResult Research()

@@ -5,7 +5,7 @@ using System.Web;
 
 namespace TheFamilyMapOnline.Models
 {
-    public class Training
+    public class training
 
     {
         public class AnnualRenewal

@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace TheFamilyMapOnline.Controllers
 {
-    public class TrainingController : Controller
+    public class trainingController : Controller
     {
         // GET: Training
         public ActionResult Training()

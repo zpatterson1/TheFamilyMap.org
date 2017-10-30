@@ -5,7 +5,7 @@ using System.Web;
 
 namespace TheFamilyMapOnline.Models
 {
-    public class Overview
+    public class overview
     {
         // textbox for...
         public string test;

@@ -5,7 +5,7 @@ using System.Web;
 
 namespace TheFamilyMapOnline.Models
 {
-    public class Home
+    public class home
     {
         // GET & SET: The Username and passwword from user.
         public class MemberLogin
