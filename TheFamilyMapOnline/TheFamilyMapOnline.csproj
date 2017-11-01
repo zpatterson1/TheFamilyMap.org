@@ -192,7 +192,6 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Overview\overview.cshtml" />
     <Content Include="Views\HowitWorks\HowitWorks.cshtml" />
     <Content Include="Views\Training\Training.cshtml" />
@@ -207,6 +206,14 @@
     <Content Include="Views\Training\AnnualRenewal.cshtml" />
     <Content Include="Views\Training\ArkansasProviders.cshtml" />
     <Content Include="Views\Research\NewestResearch.cshtml" />
+    <Content Include="Views\Research\WhatsMeasured.cshtml" />
+    <Content Include="Views\Research\ReliabilityValidity.cshtml" />
+    <Content Include="Views\Research\EvaluationTool.cshtml" />
+    <Content Include="Views\Research\InterventionTool.cshtml" />
+    <Content Include="Views\Research\HomeVisiting.cshtml" />
+    <Content Include="Views\Research\ProgramsAgencies.cshtml" />
+    <Content Include="Views\Research\TeacherParents.cshtml" />
+    <Content Include="Views\Research\DevelopmentTeam.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

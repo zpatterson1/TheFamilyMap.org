@@ -43,7 +43,7 @@ namespace TheFamilyMapOnline.Controllers
         }
         // GET: Home Visting
         
-        public ActionResult HomeVisting()
+        public ActionResult HomeVisiting()
         {
             return PartialView();
         }
@@ -55,7 +55,7 @@ namespace TheFamilyMapOnline.Controllers
         }
 
         // GET: Teachers & Parents
-        public ActionResult TeachersParents()
+        public ActionResult TeacherParents()
         {
             return PartialView();
         }
