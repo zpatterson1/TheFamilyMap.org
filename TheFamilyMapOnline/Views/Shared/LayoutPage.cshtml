@@ -1,9 +1,5 @@
-﻿@model TheFamilyMapOnline.Models.home
-@using System.Web.Mvc
+﻿<!DOCTYPE html>
 
-@{
-}
-<!doctype html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -326,6 +322,10 @@ var frm_js = {"ajax_url":"http:\/\/www.thefamilymap.org\/wp-admin\/admin-ajax.ph
 /* ]]> */
     </script>
     <script type='text/javascript' src='http://www.thefamilymap.org/wp-content/plugins/formidable/js/formidable.min.js?ver=2.03.04'></script>
+
+
+    <div>
+        @RenderBody()
+    </div>
 </body>
 </html>
-
