@@ -1,15 +1,14 @@
 ﻿<!DOCTYPE html>
-
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.thefamilymap.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.6"}};
-			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "http:\/\/www.thefamilymap.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.6" } };
+        !function (a, b, c) { function d(a) { var b, c, d, e, f = String.fromCharCode; if (!k || !k.fillText) return !1; switch (k.clearRect(0, 0, j.width, j.height), k.textBaseline = "top", k.font = "600 32px Arial", a) { case "flag": return k.fillText(f(55356, 56826, 55356, 56819), 0, 0), !(j.toDataURL().length < 3e3) && (k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 65039, 8205, 55356, 57096), 0, 0), b = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 55356, 57096), 0, 0), c = j.toDataURL(), b !== c); case "emoji4": return k.fillText(f(55357, 56425, 55356, 57341, 8205, 55357, 56507), 0, 0), d = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55357, 56425, 55356, 57341, 55357, 56507), 0, 0), e = j.toDataURL(), d !== e }return !1 } function e(a) { var c = b.createElement("script"); c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c) } var f, g, h, i, j = b.createElement("canvas"), k = j.getContext && j.getContext("2d"); for (i = Array("flag", "emoji4"), c.supports = { everything: !0, everythingExceptFlag: !0 }, h = 0; h < i.length; h++)c.supports[i[h]] = d(i[h]), c.supports.everything = c.supports.everything && c.supports[i[h]], "flag" !== i[h] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[i[h]]); c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () { c.DOMReady = !0 }, c.supports.everything || (g = function () { c.readyCallback() }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function () { "complete" === b.readyState && c.readyCallback() })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji))) }(window, document, window._wpemojiSettings);
     </script>
     <style type="text/css">
         img.wp-smiley,
@@ -31,8 +30,8 @@
     <script type='text/javascript' src='http://www.thefamilymap.org/wp-content/uploads/jw-player-plugin-for-wordpress/player/jwplayer.js?ver=4.7.6'></script>
     <script type='text/javascript' src='http://www.thefamilymap.org/wp-content/plugins/rehabtabs/js/jquery.cookie.js?ver=4.7.6'></script>
     <script type='text/javascript'>
-/* <![CDATA[ */
-var options_object = {"fx":"1","collapsible":"","cookie":"1","spinner":""};
+        /* <![CDATA[ */
+        var options_object = { "fx": "1", "collapsible": "", "cookie": "1", "spinner": "" };
 /* ]]> */
     </script>
     <script type='text/javascript' src='http://www.thefamilymap.org/wp-content/plugins/rehabtabs/js/rehabtabs.packed.js?ver=4.7.6'></script>
@@ -60,11 +59,11 @@ var options_object = {"fx":"1","collapsible":"","cookie":"1","spinner":""};
     <script type="text/javascript" src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/js/scripts.js"></script>
 
     <!-- Share Scripts -->
-    <script type="text/javascript">var switchTo5x=false;</script>
+    <script type="text/javascript">var switchTo5x = false;</script>
     <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-    <script type="text/javascript">stLight.options({publisher: "ur-ed73275c-68b2-33d3-a489-e55d925c4dc0"}); </script>
+    <script type="text/javascript">stLight.options({ publisher: "ur-ed73275c-68b2-33d3-a489-e55d925c4dc0" }); </script>
 </head>
-<body id="home">
+<body>
     <header>
         <div id="hdr">
             <div id="logo">
@@ -94,20 +93,6 @@ var options_object = {"fx":"1","collapsible":"","cookie":"1","spinner":""};
             </nav>
         </div>
     </header>
-    <div id="content">
-        <div id="mast">
-            <div class="right">
-                <h2><img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/better-childcare-starts-at-home.png" alt="Better Childcare Starts at Home" /></h2>
-                <p><strong>The Family Map</strong> <strong>Inventories</strong> encourages healthy family engagement.  Using the Inventories, early childcare programs help families navigate these important early years of childhood.</p>
-                <div id="learn-more">
-                    <a href="http://www.thefamilymap.org/how-it-works/" title="Learn more about how The Family Map assessment tool works.">Learn More &raquo;</a>
-                </div>
-            </div>
-            <div id="mast-images">
-                <img width="612" height="324" src="http://www.thefamilymap.org/wp-content/uploads/2012/07/slide1.jpg" class="attachment-masthead-bg size-masthead-bg wp-post-image" alt="" srcset="http://www.thefamilymap.org/wp-content/uploads/2012/07/slide1.jpg 612w, http://www.thefamilymap.org/wp-content/uploads/2012/07/slide1-300x158.jpg 300w" sizes="(max-width: 612px) 100vw, 612px" />									<img width="612" height="324" src="http://www.thefamilymap.org/wp-content/uploads/2012/10/family-7-612x324.jpg" class="attachment-masthead-bg size-masthead-bg wp-post-image" alt="" />									<img width="612" height="324" src="http://www.thefamilymap.org/wp-content/uploads/2012/10/family-5-612x324.jpg" class="attachment-masthead-bg size-masthead-bg wp-post-image" alt="" />									<img width="612" height="324" src="http://www.thefamilymap.org/wp-content/uploads/2012/10/MP900439320-612x324.jpg" class="attachment-masthead-bg size-masthead-bg wp-post-image" alt="" />									<img width="612" height="324" src="http://www.thefamilymap.org/wp-content/uploads/2012/10/family-31-612x324.jpg" class="attachment-masthead-bg size-masthead-bg wp-post-image" alt="" />
-            </div>
-        </div>
-    </div>
     <div id="spotlights">
         <div class="spot">
             <a href="http://www.uams.edu/FamilyMed/Scripts/rws5.pl?FORM=FamilyMapInquiry" title="Get Started">
@@ -298,8 +283,8 @@ var options_object = {"fx":"1","collapsible":"","cookie":"1","spinner":""};
                     <p>
                         Copyright &copy;
                         <script type="text/javascript">
-								var theDate=new Date()
-								document.write(theDate.getFullYear())
+                            var theDate = new Date()
+                            document.write(theDate.getFullYear())
                         </script>. UAMS Family Map. All Rights Reserved.
                     </p>
                 </div>
@@ -310,22 +295,29 @@ var options_object = {"fx":"1","collapsible":"","cookie":"1","spinner":""};
         </div>
     </footer>
     <script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>
-    <script type="text/javascript">var pageTracker = _gat._getTracker("UA-38863818-1");pageTracker._trackPageview();</script>
+    <script type="text/javascript">var pageTracker = _gat._getTracker("UA-38863818-1"); pageTracker._trackPageview();</script>
     <script type='text/javascript' src='http://www.thefamilymap.org/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
     <script type='text/javascript' src='http://www.thefamilymap.org/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
     <script type='text/javascript' src='http://www.thefamilymap.org/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
     <script type='text/javascript' src='http://www.thefamilymap.org/wp-includes/js/wp-embed.min.js?ver=4.7.6'></script>
     <script type='text/javascript' src='http://www.thefamilymap.org/wp-content/plugins/formidable/js/jquery/jquery.placeholder.min.js?ver=2.3.1'></script>
     <script type='text/javascript'>
-/* <![CDATA[ */
-var frm_js = {"ajax_url":"http:\/\/www.thefamilymap.org\/wp-admin\/admin-ajax.php","images_url":"http:\/\/www.thefamilymap.org\/wp-content\/plugins\/formidable\/images","loading":"Loading\u2026","remove":"Remove","offset":"4","nonce":"ddb903ce6d","id":"ID","no_results":"No results match"};
+        /* <![CDATA[ */
+        var frm_js = { "ajax_url": "http:\/\/www.thefamilymap.org\/wp-admin\/admin-ajax.php", "images_url": "http:\/\/www.thefamilymap.org\/wp-content\/plugins\/formidable\/images", "loading": "Loading\u2026", "remove": "Remove", "offset": "4", "nonce": "ddb903ce6d", "id": "ID", "no_results": "No results match" };
 /* ]]> */
     </script>
     <script type='text/javascript' src='http://www.thefamilymap.org/wp-content/plugins/formidable/js/formidable.min.js?ver=2.03.04'></script>
 
+<div class="container body-content">
+    @RenderBody()
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>
+</div>
 
-    <div>
-        @RenderBody()
-    </div>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
 </body>
 </html>
