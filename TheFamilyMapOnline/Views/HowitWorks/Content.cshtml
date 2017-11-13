@@ -3,7 +3,7 @@
 @using System.Web.Mvc
 
 @{ 
-
+    <title> How it works Content page </title>
     <h2>@ViewBag.Title.</h2>
     <h3>@ViewBag.Message</h3>
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -11,11 +11,11 @@
 }
 <!doctype html>
 <html>
-<body>
-
-    <title>Content</title>
-    <div id=" Content">
+<body id="how_it_works">
+    <div id="content">
         <div class="left">
+
+
             <h2>How It Works</h2>
             <ul id="subnavigation">
                 <li class="page_item page-item-475 current_page_item"><a href="http://www.thefamilymap.org/how-it-works/the-content/">Content</a></li>
@@ -23,8 +23,23 @@
                 <li class="page_item page-item-477"><a href="http://www.thefamilymap.org/how-it-works/steps-to-adopting/">Steps to Adopting</a></li>
                 <li class="page_item page-item-15"><a href="http://www.thefamilymap.org/how-it-works/frequently-asked-questions/">FAQs</a></li>
             </ul>
-        </div>
-   
+            <div id="spotlights">
+                <div id="lets-get-started">
+                    <a href="http://www.uams.edu/FamilyMed/Scripts/rws5.pl?FORM=FamilyMapInquiry" title="Let's Get Started - Join The Family Map Today!">Let's Get Started - Join The Family Map</a>
+                </div>
+                <div id="testimonialssp">
+                    <a href="http://www.thefamilymap.org/clientstestimonials/" title="People Are Talking - Hear what our clients and partners have to say about The Family Map.">People Are Talking - Hear what our clients and partners have to say about The Family Map.</a>
+                </div>
+                <!--<div id="programssp">
+                    <div id="view-all-link">
+                        <a href="" title="View All of the Programs that Use The Family Map.">View All</a>
+                    </div>
+                    <img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/programs/head-start.png" />
+                    <img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/programs/hippy-usa.png" />
+                </div>-->
+            </div>
+
+        </div>		<div class="rcontent right">
             <h1>Content</h1>
             <p><strong>The Family Map Interviews are available for different age groups.</strong></p>
             <ul>
@@ -51,6 +66,5 @@
             <p><strong><a title="What’s Measured" href="http://www.thefamilymap.org/research/whats-measured/">Learn more about each section in &#8220;What&#8217;s Measured&#8221;</a> </strong></p>
         </div>
     </div>
-   
-</body>
-</html>
+</body> 
+</html> 
