@@ -7,7 +7,7 @@ using System.Web.Routing;
 
 namespace TheFamilyMapOnline.Models
 {
-    public class clientstestimonials
+    public class ClientsTestimonials
     {
     }
     public class RoutingConfig 

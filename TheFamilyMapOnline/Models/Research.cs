@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace TheFamilyMapOnline.Models
 {
-    public class research
+    public class Research
     {
 
         //public class 

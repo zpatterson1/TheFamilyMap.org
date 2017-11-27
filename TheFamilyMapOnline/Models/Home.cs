@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc; 
 
 namespace TheFamilyMapOnline.Models
 {
-    public class home
+    public class Home
     {
         // GET & SET: The Username and passwword from user.
         public class MemberLogin

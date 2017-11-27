@@ -152,13 +152,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\clientstestimonials.cs" />
-    <Compile Include="Models\contact.cs" />
-    <Compile Include="Models\home.cs" />
+    <Compile Include="Models\ClientsTestimonials.cs" />
+    <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\Home.cs" />
     <Compile Include="Models\HowitWorks.cs" />
     <Compile Include="Models\overview.cs" />
-    <Compile Include="Models\research.cs" />
-    <Compile Include="Models\training.cs" />
+    <Compile Include="Models\Research.cs" />
+    <Compile Include="Models\Training.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -219,7 +219,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Home.cshtml" />
-    <Content Include="Views\ContactUs\Contact.cshtml" />
+    <Content Include="Views\Contact\ContactPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

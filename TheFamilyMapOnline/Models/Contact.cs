@@ -5,7 +5,8 @@ using System.Web;
 
 namespace TheFamilyMapOnline.Models
 {
-    public class contact
+    public class Contact
     {
+        //public class
     }
 }
