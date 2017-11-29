@@ -18,13 +18,14 @@ namespace TheFamilyMapOnline.Models
 
     
     // GET & SET: The Username and passwword from user.
-    public class MemberLogin
+    public class memberlogin
     {
         public string Username { get; set; }
         public string Password { get; set; }
     }
     //GET & SET: The information from user through Quick Connect.
-    public class QuickConnect
+    public class quickConnect
+       
     {
         public string YourName { get; set; }
         public string AgencyName { get; set; }

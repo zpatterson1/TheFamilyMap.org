@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace TheFamilyMapOnline.Controllers
 {
-    public class contactController : Controller
+    public class ContactController : Controller
     {
         // GET: contact
-        public ActionResult Index()
+        public ActionResult Contact()
         {
             return View();
         }

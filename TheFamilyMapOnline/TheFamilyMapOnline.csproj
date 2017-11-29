@@ -143,7 +143,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\clientstestimonialsController.cs" />
-    <Compile Include="Controllers\contactController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\homeController.cs" />
     <Compile Include="Controllers\HowitWorksController.cs" />
     <Compile Include="Controllers\overviewController.cs" />
@@ -219,7 +219,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Home.cshtml" />
-    <Content Include="Views\Contact\ContactPage.cshtml" />
+    <Content Include="Views\Contact\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
