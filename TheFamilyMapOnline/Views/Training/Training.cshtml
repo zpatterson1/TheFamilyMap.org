@@ -5,7 +5,6 @@
 @{
 
     <title> Training page </title>
-    <h2>@ViewBag.Title.</h2>
     <h3>@ViewBag.Message</h3>
 }
 
@@ -20,8 +19,8 @@
 
             <h2>Training</h2>
             <ul id="subnavigation">
-                <li class="page_item page-item-852"><a href="http://www.thefamilymap.org/training/annual-renewal/">Annual Renewal</a></li>
-                <li class="page_item page-item-864"><a href="http://www.thefamilymap.org/training/arkansas-providers/">Arkansas Providers</a></li>
+                <li class="page_item page-item-852"><a href="~/Training/AnnualRenewal">Annual Renewal</a></li>
+                <li class="page_item page-item-864"><a href="~/Training/arkansasproviders/">Arkansas Providers</a></li>
             </ul>
             <div id="spotlights">
                 <div id="lets-get-started">
@@ -39,7 +38,9 @@
                 </div>-->
             </div>
 
-        </div>		<div class="rcontent right">
+        </div>		
+        <div class="rcontent right">
+            @*@Html.Partial("ArkansasProviderspartial")*@
             <h1>Training</h1>
             <p><strong>Implementation begins with staff training, a step-by-step tour covering</strong></p>
             <ul>

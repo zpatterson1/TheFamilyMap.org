@@ -26,6 +26,10 @@ namespace TheFamilyMapOnline.Controllers
         {
             return PartialView();
         }
+        public PartialViewResult ArkansasProviderspartial()
+        {
+            return PartialView();
+        }
     }
 
 }
