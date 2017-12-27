@@ -142,7 +142,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\clientstestimonialsController.cs" />
+    <Compile Include="Controllers\clientsTestimonialsController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\homeController.cs" />
     <Compile Include="Controllers\HowitWorksController.cs" />
@@ -200,7 +200,7 @@
     <Content Include="Views\HowitWorks\HowitWorks.cshtml" />
     <Content Include="Views\Training\Training.cshtml" />
     <Content Include="Views\Research\Research.cshtml" />
-    <Content Include="Views\Client\clientstestimonials.cshtml" />
+    <Content Include="Views\Clients\clientsTestimonials.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\HowitWorks\Content.cshtml" />
     <Content Include="Views\HowitWorks\Format.cshtml" />
