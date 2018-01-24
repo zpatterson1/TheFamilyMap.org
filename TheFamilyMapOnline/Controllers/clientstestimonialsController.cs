@@ -9,7 +9,7 @@ namespace TheFamilyMapOnline.Controllers
     public class clientsTestimonialsController : Controller
     {
         // GET: Clients
-        public ActionResult Client()
+        public ActionResult Clients()
         {
             return View();
         }

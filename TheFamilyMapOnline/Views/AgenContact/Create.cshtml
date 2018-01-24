@@ -1,0 +1,64 @@
+﻿@model TheFamilyMapOnline.Models.FMOcontact
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    input[type='radio'] {
+    margin-left: 25px;
+        
+}
+    table{
+line-height: 10px;
+    }
+    input{
+        border-radius:8px;
+        padding:5px;
+    }
+    .datarow{
+        height:10px;
+    }
+</style>
+
+<div id="content">
+    <div class="container">
+
+        @using (Html.BeginForm("Create", "AgenContact", FormMethod.Post))
+        {
+             <table class="table-striped table-hover">
+                 <tr>
+                     <td>
+@Html.LabelFor(s => s.Fname)
+                     </td>
+                     <td>
+                         @Html.TextBoxFor(s => s.Fname)
+                     </td>
+                 </tr>
+                 <tr class="datarow">
+                     <td>
+                         @Html.LabelFor(s => s.Lname)
+                     </td>
+                     <td>
+                         @Html.TextBoxFor(s => s.Lname)
+                     </td>
+                 </tr>
+                 <tr class="datarow">
+                     <td>
+                         @Html.LabelFor(s => s.Contact)
+                     </td>
+                     <td>
+                    @Html.RadioButtonFor(s => s.Contact, 1, null) 
+                         @Html.LabelFor(s=>s.Contact,"Phone")
+                    @Html.RadioButtonFor(s => s.Contact, 2, null)
+                         @Html.LabelFor(s => s.Contact, "Email")
+                    @Html.RadioButtonFor(s => s.Contact, 3, null)
+                         @Html.LabelFor(s => s.Contact, "Regular Mail")  <br />
+                     </td>
+                 </tr>
+             </table>
+           
+                            
+        }
+    </div>
+</div>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="fmDataModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="FMOcontact">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="Fname" Type="varchar" MaxLength="75" />
+          <Property Name="Lname" Type="varchar" MaxLength="75" />
+          <Property Name="AgencyName" Type="varchar" MaxLength="75" />
+          <Property Name="Contact" Type="int" />
+          <Property Name="Addr" Type="varchar" MaxLength="255" />
+          <Property Name="City" Type="varchar" MaxLength="75" />
+          <Property Name="States" Type="int" />
+          <Property Name="DirFname" Type="varchar" MaxLength="75" />
+          <Property Name="DirLame" Type="varchar" MaxLength="75" />
+          <Property Name="DirPhone" Type="varchar" MaxLength="20" />
+          <Property Name="DirEmail" Type="varchar" MaxLength="75" />
+          <Property Name="NumOfSites" Type="int" />
+          <Property Name="ProgramType" Type="int" />
+          <Property Name="NumOfPrenatalChild" Type="int" />
+          <Property Name="NumOfInfantChild" Type="int" />
+          <Property Name="NumOfPreschoolChild" Type="int" />
+          <Property Name="BetterBeginingRated" Type="int" />
+          <Property Name="BB_Level" Type="int" />
+          <Property Name="Interested" Type="int" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="fmDataModelStoreContainer">
+          <EntitySet Name="FMOcontact" EntityType="Self.FMOcontact" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="fmDataModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="FMOcontact">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="Fname" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+          <Property Name="Lname" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+          <Property Name="AgencyName" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+          <Property Name="Contact" Type="Int32" />
+          <Property Name="Addr" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+          <Property Name="States" Type="Int32" />
+          <Property Name="DirFname" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+          <Property Name="DirLame" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+          <Property Name="DirPhone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DirEmail" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+          <Property Name="NumOfSites" Type="Int32" />
+          <Property Name="ProgramType" Type="Int32" />
+          <Property Name="NumOfPrenatalChild" Type="Int32" />
+          <Property Name="NumOfInfantChild" Type="Int32" />
+          <Property Name="NumOfPreschoolChild" Type="Int32" />
+          <Property Name="BetterBeginingRated" Type="Int32" />
+          <Property Name="BB_Level" Type="Int32" />
+          <Property Name="Interested" Type="Int32" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityContainer Name="fmDataEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="FMOcontacts" EntityType="Self.FMOcontact" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="fmDataModelStoreContainer" CdmEntityContainer="fmDataEntities">
+          <EntitySetMapping Name="FMOcontacts">
+            <EntityTypeMapping TypeName="fmDataModel.FMOcontact">
+              <MappingFragment StoreEntitySet="FMOcontact">
+                <ScalarProperty Name="Fname" ColumnName="Fname" />
+                <ScalarProperty Name="Lname" ColumnName="Lname" />
+                <ScalarProperty Name="AgencyName" ColumnName="AgencyName" />
+                <ScalarProperty Name="Contact" ColumnName="Contact" />
+                <ScalarProperty Name="Addr" ColumnName="Addr" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="States" ColumnName="States" />
+                <ScalarProperty Name="DirFname" ColumnName="DirFname" />
+                <ScalarProperty Name="DirLame" ColumnName="DirLame" />
+                <ScalarProperty Name="DirPhone" ColumnName="DirPhone" />
+                <ScalarProperty Name="DirEmail" ColumnName="DirEmail" />
+                <ScalarProperty Name="NumOfSites" ColumnName="NumOfSites" />
+                <ScalarProperty Name="ProgramType" ColumnName="ProgramType" />
+                <ScalarProperty Name="NumOfPrenatalChild" ColumnName="NumOfPrenatalChild" />
+                <ScalarProperty Name="NumOfInfantChild" ColumnName="NumOfInfantChild" />
+                <ScalarProperty Name="NumOfPreschoolChild" ColumnName="NumOfPreschoolChild" />
+                <ScalarProperty Name="BetterBeginingRated" ColumnName="BetterBeginingRated" />
+                <ScalarProperty Name="BB_Level" ColumnName="BB_Level" />
+                <ScalarProperty Name="Interested" ColumnName="Interested" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

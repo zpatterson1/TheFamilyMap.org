@@ -1,0 +1,57 @@
+﻿@model IEnumerable<TheFamilyMapOnline.Models.FMOcontact>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="content">
+    <div class="container">
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fname)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Lname)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AgencyName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Contact)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Fname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Lname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AgencyName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Contact)
+                    </td>
+
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>
+

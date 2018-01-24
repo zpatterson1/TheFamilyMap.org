@@ -31,7 +31,7 @@ namespace TheFamilyMapOnline.Controllers
 
         // GET: HowitWorks/StepstoAdapting
 
-        public ActionResult StepstoAdapting()
+        public ActionResult StepstoAdopting()
             {
                 return PartialView();
             }

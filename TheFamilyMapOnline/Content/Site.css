@@ -22,3 +22,14 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.frm_button_submit{
+    margin-top:10px;
+}
+
+#share {
+    width: 246px;
+    padding: 0px 91px 0px 10px;
+    float: right;
+}
+
