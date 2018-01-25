@@ -4,61 +4,129 @@
     ViewBag.Title = "Create";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <style>
-    input[type='radio'] {
-    margin-left: 25px;
-        
-}
-    table{
-line-height: 10px;
-    }
-    input{
-        border-radius:8px;
-        padding:5px;
-    }
-    .datarow{
-        height:10px;
+
+    .form-group {
+        margin-top: 10px;
     }
 </style>
+
 
 <div id="content">
     <div class="container">
 
         @using (Html.BeginForm("Create", "AgenContact", FormMethod.Post))
         {
-             <table class="table-striped table-hover">
-                 <tr>
-                     <td>
-@Html.LabelFor(s => s.Fname)
-                     </td>
-                     <td>
-                         @Html.TextBoxFor(s => s.Fname)
-                     </td>
-                 </tr>
-                 <tr class="datarow">
-                     <td>
-                         @Html.LabelFor(s => s.Lname)
-                     </td>
-                     <td>
-                         @Html.TextBoxFor(s => s.Lname)
-                     </td>
-                 </tr>
-                 <tr class="datarow">
-                     <td>
-                         @Html.LabelFor(s => s.Contact)
-                     </td>
-                     <td>
-                    @Html.RadioButtonFor(s => s.Contact, 1, null) 
-                         @Html.LabelFor(s=>s.Contact,"Phone")
-                    @Html.RadioButtonFor(s => s.Contact, 2, null)
-                         @Html.LabelFor(s => s.Contact, "Email")
-                    @Html.RadioButtonFor(s => s.Contact, 3, null)
-                         @Html.LabelFor(s => s.Contact, "Regular Mail")  <br />
-                     </td>
-                 </tr>
-             </table>
-           
-                            
+            <div class="form-group">
+                <label>First Name</label>
+                @Html.TextBoxFor(s => s.Fname, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label>Last Name</label>
+                @Html.TextBoxFor(s => s.Lname, new { @class = "form-control" })
+            </div>
+
+            <form class="form-horizontal" method="post">
+                <div class="row">
+                    <label class="col-md-3 col-form-label">Best way to contact you</label>
+                    <div class="form-group row col-md-3">
+                        <div class="col-md-6">
+                            <label class="custom-control custom-radio">
+                                @Html.RadioButtonFor(s => s.Contact, 1)
+                                <span class="custom-control-description">Phone</span>
+                            </label>
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <label class="custom-control custom-radio">
+                                @Html.RadioButtonFor(s => s.Contact, 2)
+                                <span class="custom-control-description">Email</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <p>Or</p>
+
+            <div class="form-group">
+                <div class="row">
+                    <labe class="col-md-3 col-form-label">Best way to contact you</labe>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-light">
+                            @Html.RadioButtonFor(s => s.Contact, 1, new { name = "searchType" }) Phone
+                        </label>
+
+                        <label class="btn btn-light">
+                            @Html.RadioButtonFor(s => s.Contact, 2, new { name = "searchType" }) Email
+                        </label>
+
+                        <label class="btn btn-light">
+                            @Html.RadioButtonFor(s => s.Contact, 3, new { name = "searchType" }) Regular Mail
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Street Address</label>
+                @Html.TextBoxFor(s => s.Addr, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label>City</label>
+                @Html.TextBoxFor(s => s.City, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label>Agency Director First Name</label>
+                @Html.TextBoxFor(s => s.DirFname, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label>Agency Director last Name</label>
+                @*【typo needs to be fixed in DB】*@
+                @Html.TextBoxFor(s => s.DirLame, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label>Agency Director Phone</label>
+                @Html.TextBoxFor(s => s.DirPhone, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label>Agency Director Email</label>
+                @Html.TextBoxFor(s => s.DirEmail, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label>Number of sites in your agency</label>
+                @Html.TextBoxFor(s => s.NumOfSites, new { @class = "form-control" })
+            </div>
+
+
+            <label>Number of children served</label>
+
+            <form class="form-inline">
+                <div class="form-group row">
+                    <div class="col-md-4">
+                        <label>Prenatal</label>
+                        @Html.TextBoxFor(s => s.NumOfSites, new { @class = "form-control" })
+                    </div>
+                    <div class="col-md-4">
+                        <label>Infant/Toddler</label>
+                        @Html.TextBoxFor(s => s.NumOfSites, new { @class = "form-control" })
+                    </div>
+                    <div class="col-md-4">
+                        <label>Preschool</label>
+                        @Html.TextBoxFor(s => s.NumOfSites, new { @class = "form-control" })
+                    </div>
+                </div>
+            </form>
         }
+
     </div>
 </div>
