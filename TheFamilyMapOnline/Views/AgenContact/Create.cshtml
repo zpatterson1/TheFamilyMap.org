@@ -8,7 +8,7 @@
 <style>
 
     .form-group {
-        margin-top: 10px;
+        margin-top: 5px;
     }
 </style>
 
@@ -17,116 +17,145 @@
     <div class="container">
 
         @using (Html.BeginForm("Create", "AgenContact", FormMethod.Post))
-        {
-            <div class="form-group">
-                <label>First Name</label>
-                @Html.TextBoxFor(s => s.Fname, new { @class = "form-control" })
-            </div>
+    {
+        <div class="form-group">
+            <label>First Name</label>
+            @Html.TextBoxFor(s => s.Fname, new { @class = "form-control" })
+        </div>
 
-            <div class="form-group">
-                <label>Last Name</label>
-                @Html.TextBoxFor(s => s.Lname, new { @class = "form-control" })
-            </div>
+        <div class="form-group">
+            <label>Last Name</label>
+            @Html.TextBoxFor(s => s.Lname, new { @class = "form-control" })
+        </div>
 
-            <form class="form-horizontal" method="post">
-                <div class="row">
-                    <label class="col-md-3 col-form-label">Best way to contact you</label>
-                    <div class="form-group row col-md-3">
-                        <div class="col-md-6">
-                            <label class="custom-control custom-radio">
-                                @Html.RadioButtonFor(s => s.Contact, 1)
-                                <span class="custom-control-description">Phone</span>
-                            </label>
-                        </div>
-
-                        <div class="col-md-6">
-
-                            <label class="custom-control custom-radio">
-                                @Html.RadioButtonFor(s => s.Contact, 2)
-                                <span class="custom-control-description">Email</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </form>
-
-            <p>Or</p>
-
-            <div class="form-group">
-                <div class="row">
-                    <labe class="col-md-3 col-form-label">Best way to contact you</labe>
-                    <div class="btn-group" data-toggle="buttons">
-                        <label class="btn btn-light">
-                            @Html.RadioButtonFor(s => s.Contact, 1, new { name = "searchType" }) Phone
-                        </label>
-
-                        <label class="btn btn-light">
-                            @Html.RadioButtonFor(s => s.Contact, 2, new { name = "searchType" }) Email
-                        </label>
-
-                        <label class="btn btn-light">
-                            @Html.RadioButtonFor(s => s.Contact, 3, new { name = "searchType" }) Regular Mail
-                        </label>
-                    </div>
+        <div class="form-group">
+            <label>Best way to contact you</label>
+            <div class="row">
+                <div class="btn-group col-md-6" data-toggle="buttons">
+                    <label class="btn btn-light">
+                        @Html.RadioButtonFor(s => s.Contact, 1, new { name = "searchType" }) Phone
+                    </label>
+                    <label class="btn btn-light">
+                        @Html.RadioButtonFor(s => s.Contact, 2, new { name = "searchType" }) Email
+                    </label>
+                    <label class="btn btn-light">
+                        @Html.RadioButtonFor(s => s.Contact, 3, new { name = "searchType" }) Regular Mail
+                    </label>
                 </div>
             </div>
+        </div>
 
-            <div class="form-group">
-                <label>Street Address</label>
-                @Html.TextBoxFor(s => s.Addr, new { @class = "form-control" })
-            </div>
+        <div class="form-group">
+            <label>Street Address</label>
+            @Html.TextBoxFor(s => s.Addr, new { @class = "form-control" })
+        </div>
 
-            <div class="form-group">
-                <label>City</label>
-                @Html.TextBoxFor(s => s.City, new { @class = "form-control" })
-            </div>
+        <div class="form-group">
+            <label>City</label>
+            @Html.TextBoxFor(s => s.City, new { @class = "form-control" })
+        </div>
 
-            <div class="form-group">
-                <label>Agency Director First Name</label>
-                @Html.TextBoxFor(s => s.DirFname, new { @class = "form-control" })
-            </div>
+        @*【Need a dropdown list here】*@
 
-            <div class="form-group">
-                <label>Agency Director last Name</label>
-                @*【typo needs to be fixed in DB】*@
-                @Html.TextBoxFor(s => s.DirLame, new { @class = "form-control" })
-            </div>
+        <div class="form-group">
+            <label>Agency Director First Name</label>
+            @Html.TextBoxFor(s => s.DirFname, new { @class = "form-control" })
+        </div>
 
-            <div class="form-group">
-                <label>Agency Director Phone</label>
-                @Html.TextBoxFor(s => s.DirPhone, new { @class = "form-control" })
-            </div>
+        <div class="form-group">
+            <label>Agency Director last Name</label>
+            @*【typo needs to be fixed in DB】*@
+            @Html.TextBoxFor(s => s.DirLame, new { @class = "form-control" })
+        </div>
 
-            <div class="form-group">
-                <label>Agency Director Email</label>
-                @Html.TextBoxFor(s => s.DirEmail, new { @class = "form-control" })
-            </div>
+        <div class="form-group">
+            <label>Agency Director Phone</label>
+            @Html.TextBoxFor(s => s.DirPhone, new { @class = "form-control" })
+        </div>
 
-            <div class="form-group">
-                <label>Number of sites in your agency</label>
-                @Html.TextBoxFor(s => s.NumOfSites, new { @class = "form-control" })
-            </div>
+        <div class="form-group">
+            <label>Agency Director Email</label>
+            @Html.TextBoxFor(s => s.DirEmail, new { @class = "form-control" })
+        </div>
 
+        <div class="form-group">
+            <label>Number of sites in your agency</label>
+            @Html.TextBoxFor(s => s.NumOfSites, new { @class = "form-control" })
+        </div>
 
-            <label>Number of children served</label>
+        @*【Need a dropdown list here】*@
 
-            <form class="form-inline">
-                <div class="form-group row">
-                    <div class="col-md-4">
-                        <label>Prenatal</label>
-                        @Html.TextBoxFor(s => s.NumOfSites, new { @class = "form-control" })
-                    </div>
-                    <div class="col-md-4">
-                        <label>Infant/Toddler</label>
-                        @Html.TextBoxFor(s => s.NumOfSites, new { @class = "form-control" })
-                    </div>
-                    <div class="col-md-4">
-                        <label>Preschool</label>
-                        @Html.TextBoxFor(s => s.NumOfSites, new { @class = "form-control" })
-                    </div>
+        <label>Number of children served</label>
+        <form class="form-inline">
+            <div class="form-group row">
+                <div class="col-md-4">
+                    <label>Prenatal</label>
+                    @Html.TextBoxFor(s => s.NumOfSites, new { @class = "form-control" })
                 </div>
-            </form>
+                <div class="col-md-4">
+                    <label>Infant/Toddler</label>
+                    @Html.TextBoxFor(s => s.NumOfSites, new { @class = "form-control" })
+                </div>
+                <div class="col-md-4">
+                    <label>Preschool</label>
+                    @Html.TextBoxFor(s => s.NumOfSites, new { @class = "form-control" })
+                </div>
+            </div>
+        </form>
+
+        <div class="form-group">
+            <label>Are you Better Beginnings rated ? (if in Arkansas)</label>
+            <div class="row">
+                <div class="btn-group col-md-6" data-toggle="buttons">
+                    <label class="btn btn-light">
+                        @Html.RadioButtonFor(s => s.BetterBeginingRated, 1, new { name = "searchType" }) Yes
+                    </label>
+                    <label class="btn btn-light">
+                        @Html.RadioButtonFor(s => s.BetterBeginingRated, 2, new { name = "searchType" }) No
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label>
+                If yes, what is your Better Beginnings level?
+            </label>
+            <div class="row">
+                <div class="btn-group col-md-6" data-toggle="buttons">
+                    <label class="btn btn-light">
+                        @Html.RadioButtonFor(s => s.BB_Level, 1, new { name = "searchType" }) 1
+                    </label>
+                    <label class="btn btn-light">
+                        @Html.RadioButtonFor(s => s.BB_Level, 2, new { name = "searchType" }) 2
+                    </label>
+                    <label class="btn btn-light">
+                        @Html.RadioButtonFor(s => s.BB_Level, 3, new { name = "searchType" }) 3
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>
+                Are you interested in scanning and data reporting?
+            </label>
+            <div class="row">
+                <div class="btn-group col-md-6" data-toggle="buttons">
+                    <label class="btn btn-light">
+                        @Html.RadioButtonFor(s => s.BB_Level, 1, new { name = "searchType" }) Yes
+                    </label>
+                    <label class="btn btn-light">
+                        @Html.RadioButtonFor(s => s.BB_Level, 2, new { name = "searchType" }) No
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" class="btn btn-secondary " value="Submit" />
+        </div>
         }
-
     </div>
-</div>
+    </div>
