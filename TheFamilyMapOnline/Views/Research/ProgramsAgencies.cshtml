@@ -6,16 +6,14 @@
     <title> Programs Agencies </title>
     <h2>@ViewBag.Title.</h2>
     <h3>@ViewBag.Message</h3>
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <!doctype html>
 <html>
 
 <body id="research">
-    
     <div id="content">
         <div class="left">
-
-
             <h2>Research</h2>
             <ul id="subnavigation">
                 <li class="page_item page-item-1329"><a href="~/Research/NewestResearch">Newest Research</a></li>
@@ -30,28 +28,21 @@
             </ul>
             <div id="spotlights">
                 <div id="lets-get-started">
-                    <a href="http://www.uams.edu/FamilyMed/Scripts/rws5.pl?FORM=FamilyMapInquiry" title="Let's Get Started - Join The Family Map Today!">Let's Get Started - Join The Family Map</a>
+                    <a href="~/AgenContact/Create" title="Let's Get Started - Join The Family Map Today!">Let's Get Started - Join The Family Map</a>
                 </div>
                 <div id="testimonialssp">
                     <a href="~/clientsTestimonials/Clients" title="People Are Talking - Hear what our clients and partners have to say about The Family Map.">People Are Talking - Hear what our clients and partners have to say about The Family Map.</a>
                 </div>
-                <!--<div id="programssp">
-                    <div id="view-all-link">
-                        <a href="" title="View All of the Programs that Use The Family Map.">View All</a>
-                    </div>
-                    <img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/programs/head-start.png" />
-                    <img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/programs/hippy-usa.png" />
-                </div>-->
             </div>
-
-        </div>		<div class="rcontent right">
+        </div>
+        <div class="rcontent right">
             <h1>Used by Programs/Agencies</h1>
             <p>The Family Map can be used effectively for record keeping and monitoring, self-assessment, and outcomes measurement. Administering the Family Map at the beginning and end of the program year allows programs to monitor improvement across families and to identify new strengths and concerns. It can also help early childcare programs demonstrate the impact of services to families and to determine new kinds of support needed by families.</p>
             <p><strong>Read more about it:</strong></p>
-            <p><a href="http://www.thefamilymap.org/wp-content/uploads/2012/10/Evaluation-Tool1.pdf" target="_blank">Summary of Family Map as Evaluation Tool</a></p>
-            <p><a href="http://www.thefamilymap.org/wp-content/uploads/2012/10/Intervention.pdf" target="_blank">Summary of Family Map as Intervention Tool</a></p>
-            <p><a href="http://www.thefamilymap.org/wp-content/uploads/2012/10/FPA.pdf" target="_blank">Summary of the Use of the Family Map as Family Partnership Agreement</a></p>
-            <p><a href="http://www.thefamilymap.org/wp-content/uploads/2012/10/Research-HSRC-2009-Documenting-Impacts.pdf" target="_blank">Research &#8211; HSRC 2009 Documenting Impacts</a></p>
+            <p><a href="~/Content/pdf/Evaluation-Tool.pdf" target="_blank">Summary of Family Map as Evaluation Tool</a></p>
+            <p><a href="~/Content/pdf/Intervention.pdf" target="_blank">Summary of Family Map as Intervention Tool</a></p>
+            <p><a href="~/Content/pdf/FPA.pdf" target="_blank">Summary of the Use of the Family Map as Family Partnership Agreement</a></p>
+            <p><a href="~/Content/pdf/Research-HSRC-2009-Documenting-Impacts.pdf" target="_blank">Research &#8211; HSRC 2009 Documenting Impacts</a></p>
         </div>
     </div>
 </body>

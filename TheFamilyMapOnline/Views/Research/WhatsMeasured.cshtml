@@ -2,15 +2,15 @@
 @using System.Web.Mvc
 
 @{
-    <title> what's measured </title>
+    <title> What's measured </title>
     <h2>@ViewBag.Title.</h2>
     <h3>@ViewBag.Message</h3>
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <!doctype html>
 <html>
 
 <body id="research">
-
     <div id="content">
         <div class="left">
             <h2>Research</h2>
@@ -27,24 +27,17 @@
             </ul>
             <div id="spotlights">
                 <div id="lets-get-started">
-                    <a href="http://www.uams.edu/FamilyMed/Scripts/rws5.pl?FORM=FamilyMapInquiry" title="Let's Get Started - Join The Family Map Today!">Let's Get Started - Join The Family Map</a>
+                    <a href="~/AgenContact/Create" title="Let's Get Started - Join The Family Map Today!">Let's Get Started - Join The Family Map</a>
                 </div>
                 <div id="testimonialssp">
                     <a href="~/clientsTestimonials/Clients" title="People Are Talking - Hear what our clients and partners have to say about The Family Map.">People Are Talking - Hear what our clients and partners have to say about The Family Map.</a>
                 </div>
-                <!--<div id="programssp">
-                    <div id="view-all-link">
-                        <a href="" title="View All of the Programs that Use The Family Map.">View All</a>
-                    </div>
-                    <img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/programs/head-start.png" />
-                    <img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/programs/hippy-usa.png" />
-                </div>-->
             </div>
-
-        </div>		<div class="rcontent right">
+        </div>
+        <div class="rcontent right">
             <h1>What&#8217;s Measured</h1>
             <p>Areas included in the Family Map were identified from extensive literature reviews. For each construct, we identified a pool of potentially useful items from assessment tools with a track-record of use in families with young children. Risk levels were determined from experts like the American Pediatrics Association, from comparisons with longer assessments of the construct, and from analysis of pilot data.</p>
-            <p><a href="http://www.thefamilymap.org/wp-content/uploads/2012/10/Summary-of-Family-Map-and-School-Readiness.pdf">Summary of Family Map and School Readiness</a></p>
+            <p><a href="~/Content/pdf/Summary-of-Family-Map-and-School-Readiness.pdf">Summary of Family Map and School Readiness</a></p>
             <blockquote>
                 <ol>
                     <li><strong>Self Support</strong> &#8211; Language in home, education, employment, family support and parenting experience</li>
@@ -74,7 +67,8 @@
                         <p>Much of the information obtained at the beginning of the Family Map interview is used later in the interview. By understanding the parent’s education and family background, other information can be interpreted more clearly. It is also helpful to understand the education and work background of others in the home and outside the home who may help parent the target child.</p>
                     </div>
                     <p>
-                </div><div id="rehabtabs-5a09baeb10844">
+                </div>
+                <div id="rehabtabs-5a09baeb10844">
                     </p>
                     <div class="left"><a href="~/Content/img/Routines.jpg"><img class="alignleft size-thumbnail wp-image-470" title="Routines" src="~/Content/img/Routines-150x150.jpg" alt="" width="150" height="150" /></a></div>
                     <div class="right">
@@ -85,7 +79,8 @@
                         <p>The Family Map includes questions about structure and stability in the home. Knowing what the child can or cannot expect affects how they respond to their environment. By understanding the routines the child has at home, their behavior in the classroom or elsewhere can be better understood.</p>
                     </div>
                     <p>
-                </div><div id="rehabtabs-5a09baeb10880">
+                </div>
+                <div id="rehabtabs-5a09baeb10880">
                     </p>
                     <div class="left"><a href="~/Content/img/early-learning.jpg"><img class="alignleft size-thumbnail wp-image-459" title="early learning" src="~/Content/img/early-learning-150x150.jpg" alt="" width="150" height="150" /></a></div>
                     <div class="right">
@@ -102,7 +97,8 @@
                         </ol>
                     </div>
                     <p>
-                </div><div id="rehabtabs-5a09baeb108ba">
+                </div>
+                <div id="rehabtabs-5a09baeb108ba">
                     </p>
                     <div class="left"><a href="~/Content/img/monitoring.jpg"><img class="alignleft size-thumbnail wp-image-460" title="monitoring" src="~/Content/img/monitoring-150x150.jpg" alt="" width="150" height="150" /></a></div>
                     <div class="right">
@@ -112,7 +108,8 @@
                         <p>Lack of supervision increases the risk of a wide range of injuries including poisoning, choking, exposure to toxic household materials, and falls. How much a parent monitors is related to the parent’s view of their role as a caregiver. It is also related to the parent’s belief that they can control things or that ‘accidents just happen.’ The Family Map includes questions about who supervises and where the child is supervised.</p>
                     </div>
                     <p>
-                </div><div id="rehabtabs-5a09baeb108f5">
+                </div>
+                <div id="rehabtabs-5a09baeb108f5">
                     </p>
                     <div class="left"><a href="~/Content/img/Environmental-Safety.jpg"><img class="alignleft size-thumbnail wp-image-461" title="Environmental Safety" src="~/Content/img/Environmental-Safety-150x150.jpg" alt="" width="150" height="150" /></a></div>
                     <div class="right">
@@ -122,7 +119,8 @@
                         <p>The Family Map includes questions about how the family feels about the neighborhood they live in. Sometimes families live in unsafe neighborhoods but may still develop a closeness with neighbors that reduces fearful feelings. Having neighbors they can trust makes them feel more secure about the safety of their children.</p>
                     </div>
                     <p>
-                </div><div id="rehabtabs-5a09baeb10930">
+                </div>
+                <div id="rehabtabs-5a09baeb10930">
                     </p>
                     <div class="left"><a href="~/Content/img/family-cohesion.jpg"><img class="alignleft size-thumbnail wp-image-462" title="family cohesion" src="~/Content/img/family-cohesion-150x150.jpg" alt="" width="150" height="150" /></a></div>
                     <div class="right">
@@ -132,7 +130,8 @@
                         <p>“Cohesive” families are strong and have a positive feel. Cohesive families have a lot of interpersonal closeness, high levels of communication, and harmony. These families do things together and help each other often. Children growing up in families marked by high cohesion are better adjusted and may have better outcomes. Family cohesion may be most important for children living in adverse circumstances like poverty, violence, and war. The Family Map includes questions on the level of family conflict and support in the family.</p>
                     </div>
                     <p>
-                </div><div id="rehabtabs-5a09baeb1096a">
+                </div>
+                <div id="rehabtabs-5a09baeb1096a">
                     </p>
                     <div class="left"><a href="~/Content/img/discipline.jpg"><img class="alignleft size-thumbnail wp-image-463" title="discipline" src="~/Content/img/discipline-150x150.jpg" alt="" width="150" height="150" /></a></div>
                     <div class="right">
@@ -142,7 +141,8 @@
                         <p>The Family Map not only screens for what type of discipline strategies the parent uses but how these strategies are being used. Using discipline that is both age and situation appropriate is important for being successful, as is consistency. It will be easier to discipline and teach the child when the discipline being carried out is used correctly and appropriately.</p>
                     </div>
                     <p>
-                </div><div id="rehabtabs-5a09baeb109a5">
+                </div>
+                <div id="rehabtabs-5a09baeb109a5">
                     </p>
                     <div class="left"><a href="~/Content/img/physical-mental-health.jpg"><img class="alignleft size-thumbnail wp-image-464" title="physical &amp; mental health" src="~/Content/img/physical-mental-health-150x150.jpg" alt="" width="150" height="150" /></a></div>
                     <div class="right">
@@ -152,7 +152,8 @@
                         <p>The Family Map screen for health addresses issues the parent, child, and close friends or family may be facing. When any one of these people is facing serious health issues, physically or mentally, the caregiver can be distracted and have trouble parenting the child.</p>
                     </div>
                     <p>
-                </div><div id="rehabtabs-5a09baeb109e0">
+                </div>
+                <div id="rehabtabs-5a09baeb109e0">
                     </p>
                     <div class="left"><a href="~/Content/img/basic-needs.jpg"><img class="alignleft size-thumbnail wp-image-465" title="basic needs" src="~/Content/img/basic-needs-150x150.jpg" alt="" width="150" height="150" /></a></div>
                     <div class="right">
@@ -161,9 +162,10 @@
                         <p>All children require adequate nutrition, shelter, and healthcare to ensure survival. Meeting these basic needs is as vitally important to psychological development as it is to physical development. Family resources are needed for the parent to provide a home, food, and medical care for children. These Family Map questions are designed to determine risks for financial stress, risks due to lack of resources, and physical risks due to poor nutrition.</p>
                     </div>
                     <p>
-                </div><div id="rehabtabs-5a09baeb10a04">
+                </div>
+                <div id="rehabtabs-5a09baeb10a04">
                     </p>
-                    <div class="left"><a href="~/Content/img/home-and-car-safety.jpg"><img class="alignleft size-thumbnail wp-image-466" title="home and car safety" src="~/Content/img/home-and-car-safety-150x150.jpg" alt="" width="150" height="150"  /></a></div>
+                    <div class="left"><a href="~/Content/img/home-and-car-safety.jpg"><img class="alignleft size-thumbnail wp-image-466" title="home and car safety" src="~/Content/img/home-and-car-safety-150x150.jpg" alt="" width="150" height="150" /></a></div>
                     <div class="right">
                         <h2>Home and Car Safety</h2>
                         <p>Vehicle safety practices, fire and smoke safety, child access to dangerous materials and poisons, household injury risks.</p>
@@ -182,7 +184,8 @@
                         <p>The Family Map includes questions assessing the parent and child’s support system with family and friends. When families become isolated, their risks increase. Caregivers become more at risk for harsh parenting, and the child’s development is more at risk. Helping parents to feel <strong>more</strong> part of a community can help alleviate their stress level and expose the child to more learning opportunities.</p>
                     </div>
                     <p>
-                </div><div id="rehabtabs-5a09baeb10a7a">
+                </div>
+                <div id="rehabtabs-5a09baeb10a7a">
                     </p>
                     <div class="left"><a href="~/Content/img/parental-warmth.jpg"><img class="alignleft size-thumbnail wp-image-468" title="parental warmth" src="~/Content/img/parental-warmth-150x150.jpg" alt="" width="150" height="150" /></a></div>
                     <div class="right">
@@ -195,6 +198,5 @@
             </div>
         </div>
     </div>
-
 </body>
 </html>

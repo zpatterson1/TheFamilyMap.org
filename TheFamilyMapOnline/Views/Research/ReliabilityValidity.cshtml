@@ -1,20 +1,16 @@
 ﻿@model TheFamilyMapOnline.Models.Research
 @using System.Web.Mvc
-@{ 
-
+@{
     <title> Reliability& Validity page </title>
+    <h2>@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-
 <!doctype html>
 <html>
-
 <body id="research">
-   
     <div id="content">
         <div class="left">
-
-
             <h2>Research</h2>
             <ul id="subnavigation">
                 <li class="page_item page-item-1329"><a href="~/Research/NewestResearch">Newest Research</a></li>
@@ -29,33 +25,22 @@
             </ul>
             <div id="spotlights">
                 <div id="lets-get-started">
-                    <a href="http://www.uams.edu/FamilyMed/Scripts/rws5.pl?FORM=FamilyMapInquiry" title="Let's Get Started - Join The Family Map Today!">Let's Get Started - Join The Family Map</a>
+                    <a href="~/AgenContact/Create" title="Let's Get Started - Join The Family Map Today!">Let's Get Started - Join The Family Map</a>
                 </div>
                 <div id="testimonialssp">
                     <a href="~/clientsTestimonials/Clients" title="People Are Talking - Hear what our clients and partners have to say about The Family Map.">People Are Talking - Hear what our clients and partners have to say about The Family Map.</a>
                 </div>
-                <!--<div id="programssp">
-                    <div id="view-all-link">
-                        <a href="" title="View All of the Programs that Use The Family Map.">View All</a>
-                    </div>
-                    <img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/programs/head-start.png" />
-                    <img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/programs/hippy-usa.png" />
-                </div>-->
             </div>
-
-        </div>		<div class="rcontent right">
+        </div>
+        <div class="rcontent right">
             <h1>Reliability &amp; Validity</h1>
             <p>The Family Map was developed on a strong foundation of research. We continue to evaluate the usefulness. Our studies support the reliability of the Family Map. Internal consistency estimates are generally greater than .7. Evidence of validity is examined in multiple ways. Rates of families/children identified as experiencing specific conditions were consistent with other studies and national estimates. While rates of some concerns were lower than was likely for the general population (e.g. substance abuse problems), anecdotal reports from the use of the EC-Family Map indicated parents return to teachers and request help with more sensitive topics (e.g., exposure to violence) even when not reporting problems at the initial contact.</p>
             <p>Construct validity has also been examined for a subset of key measures, and direct observation confirmed several questions. As predicted, most key measures were related to theorized constructs as expected. This is remarkable in that the risk indicators were dichotomous (risk/not) and, therefore, the power to observe significant relationships is limited. A strength of the validity examination was the confirmation of the home environment using the observational measure by trained researchers. Several key indicators of safety were confirmed using observational assessments after the educator conducted the Family Map interview.</p>
             <p><strong><span style="color: #333333;">Downloads to learn more:</span></strong></p>
-            <p><a href="http://www.thefamilymap.org/wp-content/uploads/2012/10/Development.pdf">Summary of Development of The Family Map</a></p>
-            <p><a href="http://www.thefamilymap.org/wp-content/uploads/2012/10/Validation.pdf" target="_blank">Summary of Validation Studies</a></p>
-            <p>
-                <a href="http://www.thefamilymap.org/wp-content/uploads/2012/10/ACES-screen.pdf">Summary of Family Map as an ACES Screen</a><a href="http://www.thefamilymap.org/wp-content/uploads/2012/10/Validation.pdf" target="_blank">
-                    <br />
-                </a>
-            </p>
+            <p><a href="~/Content/pdf/Development.pdf">Summary of Development of The Family Map</a></p>
+            <p><a href="~/Content/pdf/Validation.pdf">Summary of Validation Studies</a></p>
+            <p><a href="~/Content/pdf/ACES-screen.pdf">Summary of Family Map as an ACES Screen</a></p>
         </div>
     </div>
-   </body>
+</body>
 </html>

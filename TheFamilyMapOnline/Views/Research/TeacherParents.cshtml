@@ -5,16 +5,14 @@
     <title> Teacher and Parents </title>
     <h2>@ViewBag.Title.</h2>
     <h3>@ViewBag.Message</h3>
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <!doctype html>
 <html>
-
 <body id="research">
-    
     <div id="content">
         <div class="left">
-
-
             <h2>Research</h2>
             <ul id="subnavigation">
                 <li class="page_item page-item-1329"><a href="~/Research/NewestResearch">Newest Research</a></li>
@@ -29,26 +27,19 @@
             </ul>
             <div id="spotlights">
                 <div id="lets-get-started">
-                    <a href="http://www.uams.edu/FamilyMed/Scripts/rws5.pl?FORM=FamilyMapInquiry" title="Let's Get Started - Join The Family Map Today!">Let's Get Started - Join The Family Map</a>
+                    <a href="~/AgenContact/Create" title="Let's Get Started - Join The Family Map Today!">Let's Get Started - Join The Family Map</a>
                 </div>
                 <div id="testimonialssp">
                     <a href="~/clientsTestimonials/Clients" title="People Are Talking - Hear what our clients and partners have to say about The Family Map.">People Are Talking - Hear what our clients and partners have to say about The Family Map.</a>
                 </div>
-                <!--<div id="programssp">
-                    <div id="view-all-link">
-                        <a href="" title="View All of the Programs that Use The Family Map.">View All</a>
-                    </div>
-                    <img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/programs/head-start.png" />
-                    <img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/programs/hippy-usa.png" />
-                </div>-->
             </div>
-
-        </div>		<div class="rcontent right">
+        </div>
+        <div class="rcontent right">
             <h1>Acceptance by Teachers &amp; Parents</h1>
             <p>The Family Map was developed to help educators form more meaningful and enduring partnerships with parents. Such partnerships can help build competence and reduce stress for family members, thus having a direct benefit to children.</p>
             <p>Most teachers report the Family Map helped obtain new information useful in working with families. This new knowledge often explained the child’s classroom behavior. Evaluation of the Family Map implementation in Head Start programs has consistently found that the majority of teachers say the Family Map is helpful as families identify family goals.</p>
             <p>Most parents prefer the Family Map to previous Head Start home visit. Parents in all programs indicate that they were comfortable with their interview. They feel teachers understand them better after the interviews. Almost all parents reported enjoying home visits with their teachers very much.</p>
         </div>
     </div>
-    </body>
+</body>
 </html>
