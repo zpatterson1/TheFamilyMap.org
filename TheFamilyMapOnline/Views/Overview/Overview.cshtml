@@ -7,64 +7,51 @@
     ViewBag.Message = "The Overview page.";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-    <!doctype html>
-                <html>
-   
-                <body id="overview">
-                    <div id="content">
-                        <div class="left">
+<!doctype html>
 
+<html>
+<body id="overview">
+    <div id="content">
+        <div class="left">
+            <div id="spotlights">
+                <div id="lets-get-started">
+                    <a href="~/AgenContact/Create" title="Let's Get Started - Join The Family Map Today!">Let's Get Started - Join The Family Map</a>
+                </div>
+                <div id="testimonialssp">
+                    <a href="~/clientsTestimonials/Clients" title="People Are Talking - Hear what our clients and partners have to say about The Family Map.">People Are Talking - Hear what our clients and partners have to say about The Family Map.</a>
+                </div>
+            </div>
+        </div>
 
-                            <div id="spotlights">
-                                <div id="lets-get-started">
-                                    <a href="http://www.uams.edu/FamilyMed/Scripts/rws5.pl?FORM=FamilyMapInquiry" title="Let's Get Started - Join The Family Map Today!">Let's Get Started - Join The Family Map</a>
-                                </div>
-                                <div id="testimonialssp">
-                                    <a href="http://www.thefamilymap.org/clientstestimonials/" title="People Are Talking - Hear what our clients and partners have to say about The Family Map.">People Are Talking - Hear what our clients and partners have to say about The Family Map.</a>
-                                </div>
-                                <!--<div id="programssp">
-                                    <div id="view-all-link">
-                                        <a href="" title="View All of the Programs that Use The Family Map.">View All</a>
-                                    </div>
-                                    <img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/programs/head-start.png" />
-                                    <img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/programs/hippy-usa.png" />
-                                </div>-->
-                            </div>
-
-
-                        </div>		<div class="rcontent right">
-                            <h1>Overview</h1>
-                            <p><strong><a href="http://www.thefamilymap.org/wp-content/uploads/2014/05/8221863466_f98e25eb95_m.jpg"><img class="size-full wp-image-1081 alignright" style="margin-top: 0px; margin-bottom: 0px;" title="home visit" src="http://www.thefamilymap.org/wp-content/uploads/2014/05/8221863466_f98e25eb95_m.jpg" alt="" width="240" height="160" /></a>The Family Map Inventories</strong> are face-to-face interviews between early childcare or prenatal educators and families.</p>
-                            <p>The interviews identify strengths and risks at home in a respectful way. They establish parent-educator partnerships to help children grow up healthier and happier.</p>
-                            <p><strong>Features of the Family Map</strong></p>
-                            <ul>
-                                <li>Researched-based</li>
-                                <li>Developed with help from early childhood educators and families</li>
-                                <li>Accompanied by training and technical assistance with experts in early childhood education and social work</li>
-                                <li>Aligned with the Head Start Framework for parent, family and community engagement</li>
-                            </ul>
-                            <p><strong>Three Versions in English/Spanish</strong></p>
-                            <ul>
-                                <li><strong>Prenatal </strong></li>
-                                <li><strong>Infant-Toddler</strong> (Birth to 3 Years)<a href="http://www.thefamilymap.org/wp-content/uploads/2013/08/state-flyer-052913-trifold.pdf" target="_blank"><img class="wp-image-1083 alignright" title="Brochure" src="http://www.thefamilymap.org/wp-content/uploads/2012/05/Brochure.png" alt="" width="41" height="93" /></a></li>
-                                <li><strong>Early Childhood</strong> (3 to 5 Years)</li>
-                            </ul>
-                            <p style="text-align: center; padding-left: 270px;"><a href="http://www.thefamilymap.org/wp-content/uploads/2013/08/state-flyer-052913-trifold.pdf"><strong>Print a brochure to share with colleagues</strong></a></p>
-                            <p>&nbsp;</p>
-                            <p>Early childcare educators trained to use the Family Map can make a difference in children&#8217;s life-long health. In this 17-minute video, Dr. Leanne Whiteside-Mansell, Lead Developer of the Family Map, explains the early educator&#8217;s role in preschool toxic stress.</p>
-                            <p style="text-align: center; padding-left: 270px;">
-                                <a href="http://www.thefamilymap.org/wp-content/uploads/2013/08/state-flyer-052913-trifold.pdf">
-                                    <strong>
-                                        <br />
-                                    </strong>
-                                </a>
-                            </p>
-                            <p><iframe src="https://www.youtube.com/embed/EJIAWOhcZFY" frameborder="0" width="560" height="315"></iframe></p>
-                        </div>
-                    </div>
-                    
-                </body>
-            </html>
-    
-}
-}
+        <div class="rcontent right">
+            <h1>Overview</h1>
+            <p><strong><img class="size-full wp-image-1081 alignright" style="margin-top: 0px; margin-bottom: 0px;" title="home visit" src="~/Content/img/home visit.jpg" alt="" width="240" height="160" />The Family Map Inventories</strong> are face-to-face interviews between early childcare or prenatal educators and families.</p>
+            <p>The interviews identify strengths and risks at home in a respectful way. They establish parent-educator partnerships to help children grow up healthier and happier.</p>
+            <p><strong>Features of the Family Map</strong></p>
+            <ul>
+                <li>Researched-based</li>
+                <li>Developed with help from early childhood educators and families</li>
+                <li>Accompanied by training and technical assistance with experts in early childhood education and social work</li>
+                <li>Aligned with the Head Start Framework for parent, family and community engagement</li>
+            </ul>
+            <p><strong>Three Versions in English/Spanish</strong></p>
+            <ul>
+                <li><strong>Prenatal </strong></li>
+                <li><strong>Infant-Toddler</strong> (Birth to 3 Years)<a href="~/Content/pdf/state-flyer-052913-trifold.pdf" target="_blank"><img class="wp-image-1083 alignright" title="Brochure" src="~/Content/img/Brochure.png" alt="" width="41" height="93" /></a></li>
+                <li><strong>Early Childhood</strong> (3 to 5 Years)</li>
+            </ul>
+            <p style="text-align: center; padding-left: 270px;"><a href="~/Content/pdf/state-flyer-052913-trifold.pdf"><strong>Print a brochure to share with colleagues</strong></a></p>
+            <p>&nbsp;</p>
+            <p>Early childcare educators trained to use the Family Map can make a difference in children&#8217;s life-long health. In this 17-minute video, Dr. Leanne Whiteside-Mansell, Lead Developer of the Family Map, explains the early educator&#8217;s role in preschool toxic stress.</p>
+            <p style="text-align: center; padding-left: 270px;">
+                <a href="~/Content/pdf/state-flyer-052913-trifold.pdf">
+                    <strong>
+                        <br />
+                    </strong>
+                </a>
+            </p>
+            <p><iframe src="https://www.youtube.com/embed/EJIAWOhcZFY" frameborder="0" width="560" height="315"></iframe></p>
+        </div>
+    </div>
+</body>
+</html>
