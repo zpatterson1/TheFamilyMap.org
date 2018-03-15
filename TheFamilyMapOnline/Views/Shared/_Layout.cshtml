@@ -25,7 +25,9 @@
             padding: 0 !important;
         }
     </style>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"/>
+
+
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
     <link rel='stylesheet' id='formidable-css' href='http://www.thefamilymap.org/wp-content/uploads/formidable/css/formidablepro.css?ver=3311854' type='text/css' media='all' />
     <link rel='stylesheet' id='rehabtabs-css' href='http://www.thefamilymap.org/wp-content/plugins/rehabtabs/themes/smoothness/jquery-ui-1.8.16.custom.css?ver=4.7.6' type='text/css' media='all' />
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=4.7.6'></script>
@@ -34,7 +36,7 @@
     <script type='text/javascript'>
         /* <![CDATA[ */
         var options_object = { "fx": "1", "collapsible": "", "cookie": "1", "spinner": "" };
-/* ]]> */
+        /* ]]> */
     </script>
     <script type='text/javascript' src='http://www.thefamilymap.org/wp-content/plugins/rehabtabs/js/rehabtabs.packed.js?ver=4.7.6'></script>
     <link rel='https://api.w.org/' href='http://www.thefamilymap.org/wp-json/' />
@@ -60,16 +62,18 @@
     <script type="text/javascript" src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/js/jquery.cookie.js"></script>
     <script type="text/javascript" src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/js/scripts.js"></script>
 
+
     <!-- Share Scripts -->
     <script type="text/javascript">var switchTo5x = false;</script>
     <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-    <script type="text/javascript">stLight.options({ publisher: "ur-ed73275c-68b2-33d3-a489-e55d925c4dc0" }); </script>
+    <script type="text/javascript">stLight.options({ publisher: "ur-ed73275c-68b2-33d3-a489-e55d925c4dc0" });</script>
 </head>
+
 <body>
     <header>
         <div id="hdr">
             <div id="logo">
-                <a href="http://www.thefamilymap.org" title="The Family Map"><img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/logo.png" alt="The Family Map"></a>
+                <a href="~/Home/Index"  title="The Family Map"><img src="~/Content/img/logo.png" alt="The Family Map"></a>
             </div>
             <div id="login">
                 <div id="loginform">
@@ -88,7 +92,7 @@
                         <li class="page_item page-item-7 page_item_has_children"><a href="~/HowitWorks/HowitWorks">How It Works</a></li>
                         <li class="page_item page-item-9"><a href="~/training/training/">Training</a></li>
                         <li class="page_item page-item-11"><a href="~/research/research/">Research</a></li>
-                        <li class="page_item page-item-17"><a href="~/Client/clientstestimonials">Clients</a></li>
+                        <li class="page_item page-item-17"><a href="~/clientsTestimonials/Clients">Clients</a></li>
                         <li class="page_item page-item-19"><a href="~/Contact/Contact/">Contact Us</a></li>
                     </ul>
                 </div>
@@ -103,9 +107,7 @@
             <div id="events">
                 <h2>Upcoming Events</h2>
                 <div id="event-feed" class="scroll-pane">
-                    <p>
-                        <span class="date">11/15/17 -</span>
-                        <a href="http://www.thefamilymap.org/upcoming-events/family-map-open-training-16/" title="Family Map Open Training">Family Map Open Training</a>
+                    <p>                       
                     </p>
                 </div>
                 <p class="view-all"><a href="http://www.thefamilymap.org/upcoming-events/" title="View All Events">View All Events &raquo;</a></p>
@@ -218,22 +220,17 @@
                 </div>
                 <div id="btm-links">
                     <ul>
-                        <li><a href="http://www.thefamilymap.org">Home</a></li>
-                        <li class="page_item page-item-5"><a href="http://www.thefamilymap.org/overview/">Overview</a></li>
-                        <li class="page_item page-item-7 page_item_has_children"><a href="http://www.thefamilymap.org/how-it-works/">How It Works</a></li>
-                        <li class="page_item page-item-9 page_item_has_children"><a href="http://www.thefamilymap.org/training/">Training</a></li>
-                        <li class="page_item page-item-11 page_item_has_children"><a href="http://www.thefamilymap.org/research/">Research</a></li>
-                        <li class="page_item page-item-17"><a href="http://www.thefamilymap.org/clientstestimonials/">Clients</a></li>
-                        <li class="page_item page-item-19"><a href="http://www.thefamilymap.org/contact-us/">Contact Us</a></li>
+                        <li><a href="~/Home/Index">Home</a></li>
+                        <li class="page_item page-item-5"><a href="~/Overview/overview">Overview</a></li>
+                        <li class="page_item page-item-7 page_item_has_children"><a href="~/HowitWorks/HowitWorks">How It Works</a></li>
+                        <li class="page_item page-item-9"><a href="~/training/training/">Training</a></li>
+                        <li class="page_item page-item-11"><a href="~/research/research/">Research</a></li>
+                        <li class="page_item page-item-17"><a href="~/clientsTestimonials/Clients">Clients</a></li>
+                        <li class="page_item page-item-19"><a href="~/Contact/Contact/">Contact Us</a></li>
                     </ul>
                     <ul class="sub-list">
-                        <li class="page_item page-item-704"><a href="http://www.thefamilymap.org/member-resources/">Resources</a></li>
-                        <li class="page_item page-item-699"><a href="http://www.thefamilymap.org/member-forms/">Forms</a></li>
-                        <li class="page_item page-item-706"><a href="http://www.thefamilymap.org/member-order-form/">Order Form</a></li>
-                        <li class="page_item page-item-701"><a href="http://www.thefamilymap.org/member-training/">Training</a></li>
                         <li class="page_item page-item-41"><a href="http://www.uamshealth.com/?id=14&#038;sid=1" target="_blank">Disclaimer</a></li>
                         <li class="page_item page-item-43"><a href="http://www.uamshealth.com/privacy" target="_blank">Privacy Policy</a></li>
-                        <li class="page_item page-item-45"><a href="http://www.thefamilymap.org/sitemap/">Sitemap</a></li>
                     </ul>
                 </div>
                 <div id="contact-info">
@@ -251,7 +248,7 @@
                         </script>. UAMS Family Map. All Rights Reserved.
                     </p>
                 </div>
-                
+
             </div>
         </div>
     </footer>
@@ -265,19 +262,19 @@
     <script type='text/javascript'>
         /* <![CDATA[ */
         var frm_js = { "ajax_url": "http:\/\/www.thefamilymap.org\/wp-admin\/admin-ajax.php", "images_url": "http:\/\/www.thefamilymap.org\/wp-content\/plugins\/formidable\/images", "loading": "Loading\u2026", "remove": "Remove", "offset": "4", "nonce": "ddb903ce6d", "id": "ID", "no_results": "No results match" };
-/* ]]> */
+        /* ]]> */
     </script>
     <script type='text/javascript' src='http://www.thefamilymap.org/wp-content/plugins/formidable/js/formidable.min.js?ver=2.03.04'></script>
 
-<div class="container body-content">
-    <hr />
-    <footer>
-        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-    </footer>
-</div>
+    <div class="container body-content">
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
 
-@Scripts.Render("~/bundles/jquery")
-@Scripts.Render("~/bundles/bootstrap")
-@RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
 </body>
 </html>

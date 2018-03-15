@@ -203,6 +203,7 @@
     <Content Include="Content\img\Family-Map-sample-home-and-car-safety1.jpg" />
     <Content Include="Content\img\get-started-spotlight.gif" />
     <Content Include="Content\img\leanne2-150x150.jpg" />
+    <Content Include="Content\img\logo.png" />
     <Content Include="Content\img\lorraine1-100.jpg" />
     <Content Include="Content\img\MP900439320-612x324.jpg" />
     <Content Include="Content\img\nikki1-100.jpg" />
@@ -214,6 +215,7 @@
     <Content Include="Content\img\slide1.jpg" />
     <Content Include="Content\img\testimonials-spotlight.gif" />
     <Content Include="Content\img\training-spotlight.gif" />
+    <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
