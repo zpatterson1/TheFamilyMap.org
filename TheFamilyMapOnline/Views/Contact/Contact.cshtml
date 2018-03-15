@@ -1,36 +1,28 @@
 ﻿@model TheFamilyMapOnline.Models.Contact
 
 @{
-   <title> Contact Us </title>
-    ViewBag.Title  = "Contact page";
+    <title> Contact Us </title>
+    ViewBag.Title = "Contact page";
     ViewBag.Message = "the contact page";
-        Layout = "~/Views/Shared/_Layout.cshtml";
-    }
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 <!doctype html>
 <html>
 <body id="contact_us">
     <div id="content">
+
         <div class="left">
-
-
-
             <div id="spotlights">
                 <div id="lets-get-started">
-                    <a href="http://www.uams.edu/FamilyMed/Scripts/rws5.pl?FORM=FamilyMapInquiry" title="Let's Get Started - Join The Family Map Today!">Let's Get Started - Join The Family Map</a>
+                    <a href="~/AgenContact/Create" title="Let's Get Started - Join The Family Map Today!">Let's Get Started - Join The Family Map</a>
                 </div>
                 <div id="testimonialssp">
-                    <a href="http://www.thefamilymap.org/clientstestimonials/" title="People Are Talking - Hear what our clients and partners have to say about The Family Map.">People Are Talking - Hear what our clients and partners have to say about The Family Map.</a>
+                    <a href="~/clientsTestimonials/Clients" title="People Are Talking - Hear what our clients and partners have to say about The Family Map.">People Are Talking - Hear what our clients and partners have to say about The Family Map.</a>
                 </div>
-                <!--<div id="programssp">
-                    <div id="view-all-link">
-                        <a href="" title="View All of the Programs that Use The Family Map.">View All</a>
-                    </div>
-                    <img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/programs/head-start.png" />
-                    <img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/programs/hippy-usa.png" />
-                </div>-->
             </div>
+        </div>
 
-        </div>		<div class="rcontent right">
+        <div class="rcontent right">
             <h1>Contact Us</h1>
             <div class="frm_forms  with_frm_style frm_style_formidable-style" id="frm_form_4_container">
                 <form enctype="multipart/form-data" method="post" class="frm-show-form " id="form_jydhgt">
@@ -50,9 +42,9 @@
 
                             <input type="text" id="field_ie1730" name="item_meta[35]" value="" placeholder="City" data-reqmsg="This field cannot be blank" class="frm_top_container frm_form_field city" />
 
-                            <input type="text" id="field_8s9w6f" name="item_meta[36]" value="" style="width:18px" maxlength="2" placeholder="ST" data-reqmsg="This field cannot be blank" class="frm_top_container frm_form_field state auto_width" />
+                            <input type="text" id="field_8s9w6f" name="item_meta[36]" value="" style="width:35px" maxlength="2" placeholder="ST" data-reqmsg="This field cannot be blank" class="frm_top_container frm_form_field state auto_width" />
 
-<textarea name="item_meta[27]" id="field_comments2" rows="5" placeholder="How can we assist you?"></textarea>
+                            <textarea name="item_meta[27]" id="field_comments2" rows="5" placeholder="How can we assist you?"></textarea>
 
                             <input type="hidden" name="item_key" value="" />
                             <div class="frm_submit">
