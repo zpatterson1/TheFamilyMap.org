@@ -196,6 +196,10 @@
     <Content Include="Content\bootstrapDF.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\img\arkansas-300x277.png" />
+    <Content Include="Content\img\better-childcare-starts-at-home.png" />
+    <Content Include="Content\img\Breakfast-1024x765.jpg" />
+    <Content Include="Content\img\Breakfast-300x224.jpg" />
+    <Content Include="Content\img\Breakfast.jpg" />
     <Content Include="Content\img\family-31-612x324.jpg" />
     <Content Include="Content\img\family-5-612x324.jpg" />
     <Content Include="Content\img\family-7-612x324.jpg" />
@@ -209,6 +213,13 @@
     <Content Include="Content\img\nikki1-100.jpg" />
     <Content Include="Content\img\Patti-Bokony-100.jpg" />
     <Content Include="Content\img\Picture1-300x290.jpg" />
+    <Content Include="Content\img\Pie1.png" />
+    <Content Include="Content\img\Pie2.png" />
+    <Content Include="Content\img\Pie3.png" />
+    <Content Include="Content\img\Pie4.png" />
+    <Content Include="Content\img\Pie5.png" />
+    <Content Include="Content\img\Pie6.png" />
+    <Content Include="Content\img\Pie7.png" />
     <Content Include="Content\img\research-spotlight.gif" />
     <Content Include="Content\img\robert-100.jpg" />
     <Content Include="Content\img\Self-Support1-150x150.jpg" />

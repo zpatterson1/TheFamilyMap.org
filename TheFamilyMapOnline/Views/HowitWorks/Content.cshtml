@@ -2,7 +2,7 @@
 
 @using System.Web.Mvc
 
-@{ 
+@{
     <title> How it works Content page </title>
     <h3>@ViewBag.Message</h3>
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -23,21 +23,15 @@
             </ul>
             <div id="spotlights">
                 <div id="lets-get-started">
-                    <a href="http://www.uams.edu/FamilyMed/Scripts/rws5.pl?FORM=FamilyMapInquiry" title="Let's Get Started - Join The Family Map Today!">Let's Get Started - Join The Family Map</a>
+                    <a href="~/AgenContact/Create" title="Let's Get Started - Join The Family Map Today!">Let's Get Started - Join The Family Map</a>
                 </div>
                 <div id="testimonialssp">
-                    <a href="~/clients/" title="People Are Talking - Hear what our clients and partners have to say about The Family Map.">People Are Talking - Hear what our clients and partners have to say about The Family Map.</a>
+                    <a href="~/clientsTestimonials/Clients" title="People Are Talking - Hear what our clients and partners have to say about The Family Map.">People Are Talking - Hear what our clients and partners have to say about The Family Map.</a> 
                 </div>
-                <!--<div id="programssp">
-                    <div id="view-all-link">
-                        <a href="" title="View All of the Programs that Use The Family Map.">View All</a>
-                    </div>
-                    <img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/programs/head-start.png" />
-                    <img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/programs/hippy-usa.png" />
-                </div>-->
             </div>
+        </div>
 
-        </div>		<div class="rcontent right">
+        <div class="rcontent right">
             <h1>Content</h1>
             <p><strong>The Family Map Interviews are available for different age groups.</strong></p>
             <ul>
@@ -45,7 +39,14 @@
                 <li>Infants and Toddlers (for families of children from birth to 3 years)</li>
                 <li>Prenatal (for expectant mothers)<strong></strong></li>
             </ul>
-            <p><strong>Each interview question is research based</strong>. <strong><a href="http://www.thefamilymap.org/wp-content/uploads/2012/10/Breakfast.jpg"><img class="size-medium wp-image-1162 alignright" title="Breakfast" src="http://www.thefamilymap.org/wp-content/uploads/2012/10/Breakfast-300x224.jpg" alt="" width="300" height="224" srcset="http://www.thefamilymap.org/wp-content/uploads/2012/10/Breakfast-300x224.jpg 300w, http://www.thefamilymap.org/wp-content/uploads/2012/10/Breakfast-1024x765.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a></strong>Interviews are divided into these 12 sections targeting home and parenting practices that support children:</p>
+            <p>
+                <strong>Each interview question is research based</strong>.
+                <strong>
+                    <a href="~/Content/img/Breakfast.jpg">
+                        <img class="size-medium wp-image-1162 alignright" title="Breakfast" src="~/Content/img/Breakfast-300x224.jpg" alt="" width="300" height="224" srcset="~/Content/img/Breakfast-300x224.jpg 300w, ~/Content/img/Breakfast-1024x765.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" />
+                    </a>
+                </strong>Interviews are divided into these 12 sections targeting home and parenting practices that support children:
+            </p>
             <p>&nbsp;</p>
             <ul>
                 <li><strong>Self-Support: </strong>Language in the home, education, employment, family support and parenting experience</li>
@@ -61,8 +62,8 @@
                 <li><strong>Social Integrat</strong><strong>ion:</strong> Support of parent by other adults, parental community engagement</li>
                 <li><strong>Parent-Child W</strong><strong>armth:</strong> Parent responsiveness and support of the child</li>
             </ul>
-            <p><strong><a title="What’s Measured" href="http://www.thefamilymap.org/research/whats-measured/">Learn more about each section in &#8220;What&#8217;s Measured&#8221;</a> </strong></p>
+            <p><strong><a title="What’s Measured" href="~/Research/WhatsMeasured">Learn more about each section in &#8220;What&#8217;s Measured&#8221;</a> </strong></p>
         </div>
     </div>
-</body> 
+</body>
 </html> 

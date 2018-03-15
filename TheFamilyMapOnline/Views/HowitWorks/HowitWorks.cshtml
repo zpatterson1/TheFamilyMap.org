@@ -1,19 +1,17 @@
-﻿@model TheFamilyMapOnline.Models.HowitWorks 
-  
-    @using System.Web.Mvc
+﻿@model TheFamilyMapOnline.Models.HowitWorks
+
+@using System.Web.Mvc
 
 @{
     ViewBag.Title = "How it Works";
     <h3>@ViewBag.Message</h3>
     Layout = "~/Views/Shared/_Layout.cshtml";
- }
+}
 <!doctype html>
 <html>
 <body id="how_it_works">
     <div id="content">
         <div class="left">
-
-
             <h2>How It Works</h2>
             <ul id="subnavigation">
                 <li class="page_item page-item-475 current_page_item"><a href="~/HowitWorks/Content">Content</a></li>
@@ -23,29 +21,22 @@
             </ul>
             <div id="spotlights">
                 <div id="lets-get-started">
-                    <a href="http://www.uams.edu/FamilyMed/Scripts/rws5.pl?FORM=FamilyMapInquiry" title="Let's Get Started - Join The Family Map Today!">Let's Get Started - Join The Family Map</a>
+                    <a href="~/AgenContact/Create" title="Let's Get Started - Join The Family Map Today!">Let's Get Started - Join The Family Map</a>
                 </div>
                 <div id="testimonialssp">
-                    <a href="http://www.thefamilymap.org/clientstestimonials/" title="People Are Talking - Hear what our clients and partners have to say about The Family Map.">People Are Talking - Hear what our clients and partners have to say about The Family Map.</a>
+                    <a href="~/clientsTestimonials/Clients" title="People Are Talking - Hear what our clients and partners have to say about The Family Map.">People Are Talking - Hear what our clients and partners have to say about The Family Map.</a>
                 </div>
-                <!--<div id="programssp">
-                    <div id="view-all-link">
-                        <a href="" title="View All of the Programs that Use The Family Map.">View All</a>
-                    </div>
-                    <img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/programs/head-start.png" />
-                    <img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/programs/hippy-usa.png" />
-                </div>-->
             </div>
-
-        </div>		
+        </div>
         <div class="rcontent right">
             <h1>How it Works</h1>
-            <h1><a href="http://www.thefamilymap.org/wp-content/uploads/2012/05/Family-Map-Interview.png"><img class="size-full wp-image-1101 alignright" title="Family Map Interview" src="http://www.thefamilymap.org/wp-content/uploads/2012/05/Family-Map-Interview.png" alt="" width="250" height="167" /></a></h1>
+            <h1><a href="~/Content/img/Family-Map-Interview.png"><img class="size-full wp-image-1101 alignright" title="Family Map Interview" src="~/Content/img/Family-Map-Interview.png" alt="" width="250" height="167" /></a></h1>
             <p>We train your staff on the most up-to-date research on <strong>risk and protective factors in families</strong>.</p>
             <p>Then, we give <strong>step-by-step instruction and practice</strong> using The Family Map interviews and help you implement interviews. Use them at yearly home visits, at parent-teacher conferences, or at enrollment.</p>
             <p><strong>The result is better family partnership.</strong></p>
             <p>
-                Educators trained in The Family Map are more effective at serving families because they<strong>
+                Educators trained in The Family Map are more effective at serving families because they
+                <strong>
                     <br />
                 </strong>
             </p>
@@ -67,7 +58,7 @@
             </ul>
             <p><strong>Program Evaluation</strong></p>
             <p>The Family Map can also be used to evaluate intervention programs. For instance, researchers are currently using it to evaluate the Arkansas statewide Maternal, Infant, and Early Childhood Home Visiting Program.</p>
-            <p>To inquire about a plan for your program, fill out the <a href="http://www.uams.edu/FamilyMed/Scripts/rws5.pl?FORM=FamilyMapInquiry" target="_blank"><strong>Agency Information form</strong></a>.</p>
+            <p>To inquire about a plan for your program, fill out the <a href="~/AgenContact/Create" target="_blank"><strong>Agency Information form</strong></a>.</p>
         </div>
     </div>
 </body>
