@@ -196,6 +196,7 @@
     <Content Include="Content\bootstrapDF.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\img\arkansas-300x277.png" />
+    <Content Include="Content\img\arkansas.png" />
     <Content Include="Content\img\better-childcare-starts-at-home.png" />
     <Content Include="Content\img\Breakfast-1024x765.jpg" />
     <Content Include="Content\img\Breakfast-300x224.jpg" />
@@ -288,6 +289,8 @@
     <Content Include="Content\pdf\state-flyer-052913-trifold.pdf" />
     <Content Include="Content\pdf\Summary-of-Family-Map-and-School-Readiness.pdf" />
     <Content Include="Content\pdf\Validation.pdf" />
+    <Content Include="Content\pdf\Family-Map-SAMPLE-Training-Agenda.pdf" />
+    <Content Include="Content\pdf\state-flyer-10032012-v6.pdf" />
     <None Include="Properties\PublishProfiles\TheFamilyMapOnline - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

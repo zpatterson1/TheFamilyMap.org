@@ -3,7 +3,6 @@
 @using System.Web.Mvc
 
 @{
-
     <title> Training page </title>
     <h3>@ViewBag.Message</h3>
 }
@@ -12,11 +11,9 @@
 <html>
 
 <body id="training">
-   
+
     <div id="content">
         <div class="left">
-
-
             <h2>Training</h2>
             <ul id="subnavigation">
                 <li class="page_item page-item-852"><a href="~/Training/AnnualRenewal">Annual Renewal</a></li>
@@ -24,21 +21,14 @@
             </ul>
             <div id="spotlights">
                 <div id="lets-get-started">
-                    <a href="http://www.uams.edu/FamilyMed/Scripts/rws5.pl?FORM=FamilyMapInquiry" title="Let's Get Started - Join The Family Map Today!">Let's Get Started - Join The Family Map</a>
+                    <a href="~/AgenContact/Create" title="Let's Get Started - Join The Family Map Today!">Let's Get Started - Join The Family Map</a>
                 </div>
                 <div id="testimonialssp">
-                    <a href="http://www.thefamilymap.org/clientstestimonials/" title="People Are Talking - Hear what our clients and partners have to say about The Family Map.">People Are Talking - Hear what our clients and partners have to say about The Family Map.</a>
+                    <a href="~/clientsTestimonials/Clients" title="People Are Talking - Hear what our clients and partners have to say about The Family Map.">People Are Talking - Hear what our clients and partners have to say about The Family Map.</a>
                 </div>
-                <!--<div id="programssp">
-                    <div id="view-all-link">
-                        <a href="" title="View All of the Programs that Use The Family Map.">View All</a>
-                    </div>
-                    <img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/programs/head-start.png" />
-                    <img src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/images/programs/hippy-usa.png" />
-                </div>-->
             </div>
+        </div>
 
-        </div>		
         <div class="rcontent right">
             @*@Html.Partial("ArkansasProviderspartial")*@
             <h1>Training</h1>
@@ -52,7 +42,7 @@
             <p><strong>Training Features</strong></p>
             <ul>
                 <li>Web based learning session either before or after the in-person training</li>
-                <li>6-hour live learning session – <a href="http://www.thefamilymap.org/wp-content/uploads/2012/10/Family-Map-SAMPLE-Training-Agenda.pdf" target="_blank">SAMPLE Training Agenda</a></li>
+                <li>6-hour live learning session – <a href="~/Content/pdf/Family-Map-SAMPLE-Training-Agenda.pdf" target="_blank">SAMPLE Training Agenda</a></li>
                 <li>Maximum group size is 25</li>
                 <li>All materials provided</li>
                 <li>Upon completion, practitioner is authorized to conduct the Family Map Inventory</li>
@@ -62,6 +52,6 @@
             <p>&nbsp;</p>
         </div>
     </div>
-    
+
 </body>
 </html>
