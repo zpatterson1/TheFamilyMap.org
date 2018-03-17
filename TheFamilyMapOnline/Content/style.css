@@ -718,13 +718,11 @@ input.frm_blank_field {
 
     #content .rcontent form input.state, #subftr #quick-connect form div.state input {
         width: 30px;
-        margin-left: 10px;
         float: left;
     }
 
     #content .rcontent form input.zip {
         width: 55px;
-        margin-left: 10px;
         float: left;
     }
 /* END Contact Form Styles */
@@ -771,7 +769,7 @@ h2.expand {
 }
 
     #subftr #events {
-        width: 230px;
+        width: 320px;
         padding: 0px 30px 0px 60px;
         float: left;
     }
@@ -822,7 +820,7 @@ h2.expand {
 }
 
 #subftr #quick-connect {
-    width: 250px;
+    width: 320px;
     padding: 0px 60px 0px 10px;
     float: left;
 }
@@ -869,7 +867,7 @@ select.styled {
 			#subftr #quick-connect input.btn:hover {background-position: 0px -67px;}
 */
 #subftr #share {
-    width: 219px;
+    width: 320px;
     padding: 0px 91px 0px 10px;
     float: left;
 }
