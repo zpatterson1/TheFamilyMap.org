@@ -11,6 +11,8 @@
         window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "http:\/\/www.thefamilymap.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.6" } };
         !function (a, b, c) { function d(a) { var b, c, d, e, f = String.fromCharCode; if (!k || !k.fillText) return !1; switch (k.clearRect(0, 0, j.width, j.height), k.textBaseline = "top", k.font = "600 32px Arial", a) { case "flag": return k.fillText(f(55356, 56826, 55356, 56819), 0, 0), !(j.toDataURL().length < 3e3) && (k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 65039, 8205, 55356, 57096), 0, 0), b = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 55356, 57096), 0, 0), c = j.toDataURL(), b !== c); case "emoji4": return k.fillText(f(55357, 56425, 55356, 57341, 8205, 55357, 56507), 0, 0), d = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55357, 56425, 55356, 57341, 55357, 56507), 0, 0), e = j.toDataURL(), d !== e }return !1 } function e(a) { var c = b.createElement("script"); c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c) } var f, g, h, i, j = b.createElement("canvas"), k = j.getContext && j.getContext("2d"); for (i = Array("flag", "emoji4"), c.supports = { everything: !0, everythingExceptFlag: !0 }, h = 0; h < i.length; h++)c.supports[i[h]] = d(i[h]), c.supports.everything = c.supports.everything && c.supports[i[h]], "flag" !== i[h] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[i[h]]); c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () { c.DOMReady = !0 }, c.supports.everything || (g = function () { c.readyCallback() }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function () { "complete" === b.readyState && c.readyCallback() })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji))) }(window, document, window._wpemojiSettings);
     </script>
+
+
     <style type="text/css">
         img.wp-smiley,
         img.emoji {
@@ -28,52 +30,28 @@
 
 
     <link rel="stylesheet" href="~/Content/bootstrap.css" />
-    <link rel='stylesheet' id='formidable-css' href='http://www.thefamilymap.org/wp-content/uploads/formidable/css/formidablepro.css?ver=3311854' type='text/css' media='all' />
-    <link rel='stylesheet' id='rehabtabs-css' href='http://www.thefamilymap.org/wp-content/plugins/rehabtabs/themes/smoothness/jquery-ui-1.8.16.custom.css?ver=4.7.6' type='text/css' media='all' />
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=4.7.6'></script>
-    <script type='text/javascript' src='http://www.thefamilymap.org/wp-content/uploads/jw-player-plugin-for-wordpress/player/jwplayer.js?ver=4.7.6'></script>
-    <script type='text/javascript' src='http://www.thefamilymap.org/wp-content/plugins/rehabtabs/js/jquery.cookie.js?ver=4.7.6'></script>
-    <script type='text/javascript'>
-        /* <![CDATA[ */
-        var options_object = { "fx": "1", "collapsible": "", "cookie": "1", "spinner": "" };
-        /* ]]> */
-    </script>
-    <script type='text/javascript' src='http://www.thefamilymap.org/wp-content/plugins/rehabtabs/js/rehabtabs.packed.js?ver=4.7.6'></script>
-    <link rel='https://api.w.org/' href='http://www.thefamilymap.org/wp-json/' />
-    <link rel="icon" href="http://www.thefamilymap.org/wp-content/themes/thefamilymap/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="http://www.thefamilymap.org/wp-content/themes/thefamilymap/favicon.ico" type="image/x-icon" />
-    <!--[if IE 7]>
-    <style type="text/css">
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    @*  <link rel='stylesheet' id='formidable-css' href='http://www.thefamilymap.org/wp-content/uploads/formidable/css/formidablepro.css?ver=3311854' type='text/css' media='all' />
+        <link rel='stylesheet' id='rehabtabs-css' href='http://www.thefamilymap.org/wp-content/plugins/rehabtabs/themes/smoothness/jquery-ui-1.8.16.custom.css?ver=4.7.6' type='text/css' media='all' />
+    *@
 
-    </style>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+
+
+    <!--[if IE 7]>
+    <style type="text/css"></style>
     <![endif]-->
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link rel="stylesheet" type="text/css" href="~/Content/reset.css" />
-    <link rel="stylesheet" type="text/css" href="~/Content/style.css" />
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/js/jquery.cycle.js"></script>
-    <script type="text/javascript" src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/js/custom-form-elements.js"></script>
-    <script type="text/javascript" src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/js/jquery.jscrollpane.min.js"></script>
-    <script type="text/javascript" src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/js/jquery.mousewheel.js"></script>
-    <script type="text/javascript" src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/js/jquery.md5.js"></script>
-    <script type="text/javascript" src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/js/jquery.cookie.js"></script>
-    <script type="text/javascript" src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/js/scripts.js"></script>
-
-
-    <!-- Share Scripts -->
-    <script type="text/javascript">var switchTo5x = false;</script>
-    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-    <script type="text/javascript">stLight.options({ publisher: "ur-ed73275c-68b2-33d3-a489-e55d925c4dc0" });</script>
 </head>
 
 <body>
     <header>
         <div id="hdr">
             <div id="logo">
-                <a href="~/Home/Index"  title="The Family Map"><img src="~/Content/img/logo.png" alt="The Family Map"></a>
+                <a href="~/Home/Index" title="The Family Map"><img src="~/Content/img/logo.png" alt="The Family Map"></a>
             </div>
             <div id="login">
                 <div id="loginform">
@@ -107,7 +85,7 @@
             <div id="events">
                 <h2>Upcoming Events</h2>
                 <div id="event-feed" class="scroll-pane">
-                    <p>                       
+                    <p>
                     </p>
                 </div>
                 <p class="view-all"><a href="http://www.thefamilymap.org/upcoming-events/" title="View All Events">View All Events &raquo;</a></p>
@@ -182,6 +160,7 @@
                         <p class="credit">- </p>
                     </div>
                     <div class="testimony">
+                        @*URL needs to be switched to local after clientsTestimonials is finished*@
                         <p>&#8220;I was trained a few years back and have implemented FMI for the Preschool Head Start families.  I have 20 family advocates that provide the direct services and have really grown to appreciate the Family MAPS Inventory tool.  There was fear at first because of the tools size and the depth of questions asked, however my advocates love it!   It was great watching the staff grow over the past years with this tool. We have seasoned staff; one has worked <a class="moretag" href="http://www.thefamilymap.org/testimonials/staff-success/">[read more]</a></p>
                         <p class="credit">- </p>
                     </div>
@@ -252,19 +231,46 @@
             </div>
         </div>
     </footer>
+
+
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=4.7.6'></script>
+    @*  <script type='text/javascript' src='http://www.thefamilymap.org/wp-content/uploads/jw-player-plugin-for-wordpress/player/jwplayer.js?ver=4.7.6'></script>
+        <script type='text/javascript' src='http://www.thefamilymap.org/wp-content/plugins/rehabtabs/js/jquery.cookie.js?ver=4.7.6'></script>
+    *@
+
+    <script type='text/javascript'>
+            /* <![CDATA[ */var options_object = { "fx": "1", "collapsible": "", "cookie": "1", "spinner": "" };/* ]]> */
+            /* <![CDATA[ */var frm_js = { "ajax_url": "http:\/\/www.thefamilymap.org\/wp-admin\/admin-ajax.php", "images_url": "http:\/\/www.thefamilymap.org\/wp-content\/plugins\/formidable\/images", "loading": "Loading\u2026", "remove": "Remove", "offset": "4", "nonce": "ddb903ce6d", "id": "ID", "no_results": "No results match" };/* ]]> */
+    </script>
+
+    <script src="~/Scripts/Scripts.js"></script>
+    @*  <script type='text/javascript' src='http://www.thefamilymap.org/wp-content/plugins/rehabtabs/js/rehabtabs.packed.js?ver=4.7.6'></script>
+        <link rel='https://api.w.org/' href='http://www.thefamilymap.org/wp-json/' />
+        <link rel="icon" href="http://www.thefamilymap.org/wp-content/themes/thefamilymap/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="http://www.thefamilymap.org/wp-content/themes/thefamilymap/favicon.ico" type="image/x-icon" />
+        <script type="text/javascript" src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/js/jquery.cycle.js"></script>
+        <script type="text/javascript" src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/js/custom-form-elements.js"></script>
+        <script type="text/javascript" src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/js/jquery.jscrollpane.min.js"></script>
+        <script type="text/javascript" src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/js/jquery.md5.js"></script>
+        <script type="text/javascript" src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="http://www.thefamilymap.org/wp-content/themes/thefamilymap/js/scripts.js"></script>
+    *@
+
+    <!-- Share Scripts -->
+    <script type="text/javascript">var switchTo5x = false;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({ publisher: "ur-ed73275c-68b2-33d3-a489-e55d925c4dc0" });</script>
     <script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>
     <script type="text/javascript">var pageTracker = _gat._getTracker("UA-38863818-1"); pageTracker._trackPageview();</script>
-    <script type='text/javascript' src='http://www.thefamilymap.org/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
-    <script type='text/javascript' src='http://www.thefamilymap.org/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
-    <script type='text/javascript' src='http://www.thefamilymap.org/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
-    <script type='text/javascript' src='http://www.thefamilymap.org/wp-includes/js/wp-embed.min.js?ver=4.7.6'></script>
-    <script type='text/javascript' src='http://www.thefamilymap.org/wp-content/plugins/formidable/js/jquery/jquery.placeholder.min.js?ver=2.3.1'></script>
-    <script type='text/javascript'>
-        /* <![CDATA[ */
-        var frm_js = { "ajax_url": "http:\/\/www.thefamilymap.org\/wp-admin\/admin-ajax.php", "images_url": "http:\/\/www.thefamilymap.org\/wp-content\/plugins\/formidable\/images", "loading": "Loading\u2026", "remove": "Remove", "offset": "4", "nonce": "ddb903ce6d", "id": "ID", "no_results": "No results match" };
-        /* ]]> */
-    </script>
-    <script type='text/javascript' src='http://www.thefamilymap.org/wp-content/plugins/formidable/js/formidable.min.js?ver=2.03.04'></script>
+    @*  <script type='text/javascript' src='http://www.thefamilymap.org/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+        <script type='text/javascript' src='http://www.thefamilymap.org/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+        <script type='text/javascript' src='http://www.thefamilymap.org/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
+        <script type='text/javascript' src='http://www.thefamilymap.org/wp-includes/js/wp-embed.min.js?ver=4.7.6'></script>
+        <script type='text/javascript' src='http://www.thefamilymap.org/wp-content/plugins/formidable/js/jquery/jquery.placeholder.min.js?ver=2.3.1'></script>
+        <script type='text/javascript' src='http://www.thefamilymap.org/wp-content/plugins/formidable/js/formidable.min.js?ver=2.03.04'></script>
+    *@
+
 
     <div class="container body-content">
         <hr />

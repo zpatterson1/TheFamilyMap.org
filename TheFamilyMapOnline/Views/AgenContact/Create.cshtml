@@ -1,10 +1,10 @@
 ﻿@model TheFamilyMapOnline.Models.FMOcontact
+
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <style>
-
-
     .form-group {
         margin-top: 5px;
     }
@@ -140,10 +140,10 @@
                 <div class="row">
                     <div class="btn-group col-md-6" data-toggle="buttons">
                         <label class="btn btn-light">
-                            @Html.RadioButtonFor(s => s.BB_Level, 1, new { name = "searchType" }) Yes
+                            @Html.RadioButtonFor(s => s.Interested, 1, new { name = "searchType" }) Yes
                         </label>
                         <label class="btn btn-light">
-                            @Html.RadioButtonFor(s => s.BB_Level, 2, new { name = "searchType" }) No
+                            @Html.RadioButtonFor(s => s.Interested, 2, new { name = "searchType" }) No
                         </label>
                     </div>
                 </div>
