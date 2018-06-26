@@ -1,156 +1,190 @@
 ﻿@model TheFamilyMapOnline.Models.FMOcontact
-
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@section Scripts{
+    @Scripts.Render("~/scripts/mvcfoolproof.unobtrusive.js")
+
+    <script>
+        $("#director").click(function () {
+            $("[name='DirFname']").val($("[name='Fname']").val())
+            $("[name='DirLame']").val($("[name='Lname']").val())
+        });
+    </script>
+}
 <style>
     .form-group {
         margin-top: 5px;
     }
 </style>
 
+
 <div id="content">
     <div class="container">
+        <div class="rcontent">
+            <h1>Tell us a little about yourself!</h1>
+
+        </div>
         @using (Html.BeginForm("Create", "AgenContact", FormMethod.Post))
         {
-            <div class="form-group">
-                <label>First Name</label>
-                @Html.TextBoxFor(s => s.Fname, new { @class = "form-control" })
-            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            @Html.TextBoxFor(s => s.Fname, new { @class = "form-control" }) @Html.ValidationMessageFor(s => s.Fname)
+                        </div>
 
-            <div class="form-group">
-                <label>Last Name</label>
-                @Html.TextBoxFor(s => s.Lname, new { @class = "form-control" })
-            </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            @Html.TextBoxFor(s => s.Lname, new { @class = "form-control" }) @Html.ValidationMessageFor(s => s.Lname)
+                            <span id="director" class="btn btn-xs btn-light" style="margin-top:3px;">Im a director (click once)</span>
+                        </div>
+                        <div class="form-group">
+                            <label>Agency Name</label>
+                            @Html.TextBoxFor(s => s.AgencyName, new { @class = "form-control" }) @Html.ValidationMessageFor(s => s.AgencyName)
+                        </div>
+                        <div class="form-group">
+                            <label>Best way to contact agency</label>
+                            <div class="row">
+                                <div class="btn-group col-md-6" data-toggle="buttons">
+                                    <div class="btn btn-light">
+                                        @Html.RadioButtonFor(s => s.ContactNum, "1", new { id = "con1" }) Phone
+                                    </div>
+                                    <div class="btn btn-light">
+                                        @Html.RadioButtonFor(s => s.ContactNum, "2", new { id = "con2" }) Email
+                                    </div>
+                                    <div class="btn btn-light">
+                                        @Html.RadioButtonFor(s => s.ContactNum, "3", new { id = "con3" }) Regular Mail @Html.ValidationMessageFor(s => s.ContactNum)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>State</label>
+                            @Html.DropDownListFor(x => x.States, TheFamilyMapOnline.Helpers.SelectListHelper.GetStatesList(), "Select", new { @class = "form-control" }) @Html.ValidationMessageFor(s => s.States)
+                        </div>
+                        <div class="form-group">
+                            <label>Street Address</label>
+                            @Html.TextBoxFor(s => s.Addr, new { @class = "form-control" }) @Html.ValidationMessageFor(s => s.Addr)
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label>City</label>
+                            @Html.TextBoxFor(s => s.City, new { @class = "form-control" }) @Html.ValidationMessageFor(s => s.City)
+                        </div>
 
-            <div class="form-group">
-                <label>Best way to contact you</label>
-                <div class="row">
-                    <div class="btn-group col-md-6" data-toggle="buttons">
-                        <label class="btn btn-light">
-                            @Html.RadioButtonFor(s => s.Contact, 1, new { name = "searchType" }) Phone
-                        </label>
-                        <label class="btn btn-light">
-                            @Html.RadioButtonFor(s => s.Contact, 2, new { name = "searchType" }) Email
-                        </label>
-                        <label class="btn btn-light">
-                            @Html.RadioButtonFor(s => s.Contact, 3, new { name = "searchType" }) Regular Mail
-                        </label>
+
+                        <div class="form-group">
+                            <label>Agency Director First Name</label>
+                            @Html.TextBoxFor(s => s.DirFname, new { @class = "form-control" }) <span></span> @Html.ValidationMessageFor(s => s.DirFname)
+                        </div>
+
+                        <div class="form-group">
+                            <label>Agency Director Last Name</label>
+                            @*【typo needs to be fixed in DB】*@
+                            @Html.TextBoxFor(s => s.DirLame, new { @class = "form-control" }) @Html.ValidationMessageFor(s => s.DirLame)
+                        </div>
+
+                        <div class="form-group">
+                            <label>Agency Director Phone</label>
+                            @Html.TextBoxFor(s => s.DirPhone, new { @class = "form-control" }) @Html.ValidationMessageFor(s => s.DirPhone)
+                        </div>
+
+                        <div class="form-group">
+                            <label>Agency Director Email</label>
+                            @Html.TextBoxFor(s => s.DirEmail, new { @class = "form-control" }) @Html.ValidationMessageFor(s => s.DirEmail)
+                        </div>
+
+                        <div class="form-group">
+                            <label>Number of sites in your agency</label>
+                            @Html.TextBoxFor(s => s.NumOfSites, new { @class = "form-control" }) @Html.ValidationMessageFor(s => s.NumOfSites)
+                        </div>
+                        <div class="form-group">
+                            <label>Program Type</label>
+                            @Html.DropDownListFor(s => s.ProgramType, TheFamilyMapOnline.Helpers.SelectListHelper.GetProgramTypeList(), "Select", new { @class = "form-control" })
+                        </div>
                     </div>
                 </div>
-            </div>
+                <br />
+                <div class="row justify-content-center">
+                    <div class="col-md-5">
+                        <label>Number of children served</label>
+                        <div class="form-inline" style="margin-left:-33%; margin-bottom:15px;">
+                            <div class="form-group row">
+                                <div class="col-md-4">
+                                    <label>Prenatal</label>
+                                    @Html.TextBoxFor(s => s.NumOfPrenatalChild, new { @class = "form-control" })<br /> @Html.ValidationMessageFor(s => s.NumOfPrenatalChild)
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Infant/Toddler</label>
+                                    @Html.TextBoxFor(s => s.NumOfInfantChild, new { @class = "form-control" })<br /> @Html.ValidationMessageFor(s => s.NumOfInfantChild)
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Preschool</label>
+                                    @Html.TextBoxFor(s => s.NumOfPreschoolChild, new { @class = "form-control" })<br /> @Html.ValidationMessageFor(s => s.NumOfPreschoolChild)
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-left:-15%">
+                        <div class="form-group">
+                            <label>Are you Better Beginnings rated ? (if in Arkansas)</label>
+                            <div class="row">
+                                <div class="btn-group col-md-6" data-toggle="buttons">
+                                    <label class="btn btn-light">
+                                        @Html.RadioButtonFor(s => s.BetterBeginingRated, 1, new { id = "bbr1" }) Yes
+                                    </label>
+                                    <label class="btn btn-light">
+                                        @Html.RadioButtonFor(s => s.BetterBeginingRated, 2, new { id = "bbr2" }) No
+                                    </label>
+                                </div>
+                                @Html.ValidationMessageFor(s => s.BetterBeginingRated)
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                If yes, what is your Better Beginnings level?
+                            </label>
+                            <div class="row">
+                                <div class="btn-group col-md-6" data-toggle="buttons">
+                                    <div class="btn btn-light">
+                                        @Html.RadioButtonFor(s => s.BB_Level, "1", new { id = "bb1" }) 1
+                                    </div>
+                                    <div class="btn btn-light">
+                                        @Html.RadioButtonFor(s => s.BB_Level, "2", new { id = "bb2" }) 2
+                                    </div>
+                                    <div class="btn btn-light">
+                                        @Html.RadioButtonFor(s => s.BB_Level, "3", new { id = "bb3" }) 3
+                                    </div>
+                                </div>
+                                @Html.ValidationMessageFor(s => s.BB_Level)
+                            </div>
+                        </div>
 
-            <div class="form-group">
-                <label>Street Address</label>
-                @Html.TextBoxFor(s => s.Addr, new { @class = "form-control" })
-            </div>
-
-            <div class="form-group">
-                <label>City</label>
-                @Html.TextBoxFor(s => s.City, new { @class = "form-control" })
-            </div>
-
-            @*【Need a dropdown list here】*@
-
-            <div class="form-group">
-                <label>Agency Director First Name</label>
-                @Html.TextBoxFor(s => s.DirFname, new { @class = "form-control" })
-            </div>
-
-            <div class="form-group">
-                <label>Agency Director last Name</label>
-                @*【typo needs to be fixed in DB】*@
-                @Html.TextBoxFor(s => s.DirLame, new { @class = "form-control" })
-            </div>
-
-            <div class="form-group">
-                <label>Agency Director Phone</label>
-                @Html.TextBoxFor(s => s.DirPhone, new { @class = "form-control" })
-            </div>
-
-            <div class="form-group">
-                <label>Agency Director Email</label>
-                @Html.TextBoxFor(s => s.DirEmail, new { @class = "form-control" })
-            </div>
-
-            <div class="form-group">
-                <label>Number of sites in your agency</label>
-                @Html.TextBoxFor(s => s.NumOfSites, new { @class = "form-control" })
-            </div>
-
-            @*【Need a dropdown list here】*@
-
-            <label>Number of children served</label>
-            <div class="form-inline">
-                <div class="form-group row">
-                    <div class="col-md-4">
-                        <label>Prenatal</label>
-                        @Html.TextBoxFor(s => s.NumOfSites, new { @class = "form-control" })
-                    </div>
-                    <div class="col-md-4">
-                        <label>Infant/Toddler</label>
-                        @Html.TextBoxFor(s => s.NumOfSites, new { @class = "form-control" })
-                    </div>
-                    <div class="col-md-4">
-                        <label>Preschool</label>
-                        @Html.TextBoxFor(s => s.NumOfSites, new { @class = "form-control" })
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>Are you Better Beginnings rated ? (if in Arkansas)</label>
-                <div class="row">
-                    <div class="btn-group col-md-6" data-toggle="buttons">
-                        <label class="btn btn-light">
-                            @Html.RadioButtonFor(s => s.BetterBeginingRated, 1, new { name = "searchType" }) Yes
-                        </label>
-                        <label class="btn btn-light">
-                            @Html.RadioButtonFor(s => s.BetterBeginingRated, 2, new { name = "searchType" }) No
-                        </label>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="form-group">
-                <label>
-                    If yes, what is your Better Beginnings level?
-                </label>
-                <div class="row">
-                    <div class="btn-group col-md-6" data-toggle="buttons">
-                        <label class="btn btn-light">
-                            @Html.RadioButtonFor(s => s.BB_Level, 1, new { name = "searchType" }) 1
-                        </label>
-                        <label class="btn btn-light">
-                            @Html.RadioButtonFor(s => s.BB_Level, 2, new { name = "searchType" }) 2
-                        </label>
-                        <label class="btn btn-light">
-                            @Html.RadioButtonFor(s => s.BB_Level, 3, new { name = "searchType" }) 3
-                        </label>
+                        <div class="form-group">
+                            <label>
+                                Are you interested in scanning and data reporting?
+                            </label>
+                            <div class="row">
+                                <div class="btn-group col-md-6" data-toggle="buttons">
+                                    <div class="btn btn-light">
+                                        @Html.RadioButtonFor(s => s.Interested, 1, new { id = "int1" }) Yes
+                                    </div>
+                                    <div class="btn btn-light">
+                                        @Html.RadioButtonFor(s => s.Interested, 2, new { id = "int2" }) No
+                                    </div>
+                                </div>
+                                @Html.ValidationMessageFor(s => s.Interested)
+                            </div>
+                        </div>
+                            </div>
+                        <div class="form-group pull-left">
+                            <input type="submit" class="btn btn-secondary " value="Submit" />
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="form-group">
-                <label>
-                    Are you interested in scanning and data reporting?
-                </label>
-                <div class="row">
-                    <div class="btn-group col-md-6" data-toggle="buttons">
-                        <label class="btn btn-light">
-                            @Html.RadioButtonFor(s => s.Interested, 1, new { name = "searchType" }) Yes
-                        </label>
-                        <label class="btn btn-light">
-                            @Html.RadioButtonFor(s => s.Interested, 2, new { name = "searchType" }) No
-                        </label>
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <input type="submit" class="btn btn-secondary " value="Submit" />
             </div>
         }
     </div>

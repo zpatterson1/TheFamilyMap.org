@@ -2102,6 +2102,11 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     vertical-align: baseline;
     background: transparent;
 }
+label {
+    margin: 0px 0px 5px 9px;
+    font-family: "Cabin Sketch", cursive;
+    font-size: 12pt;
+}
 
 body {
     line-height: 1;
@@ -2247,7 +2252,16 @@ hr {
     height: 1px;
 }
 /* Contact Validation */
-div.frm_error_style {
+.input-validation-error {
+    border-color: #b94a48;
+    background-color: #f2dede;
+    color: #b94a48;
+}
+span.field-validation-error {
+    color: #b94a48;
+}
+
+    div .frm_error_style {
     display: none;
     border: solid 1px #edd3d7;
     background-color: #f2dede;
@@ -2596,6 +2610,7 @@ input.frm_blank_field {
         color: #00529b;
         font-weight: normal;
         border-bottom: solid 1px #f0d4be;
+        font-family: 'Droid Serif', serif;
     }
 
     #content .rcontent p {

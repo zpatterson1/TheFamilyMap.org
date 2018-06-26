@@ -239,8 +239,8 @@
     *@
 
     <script type='text/javascript'>
-            /* <![CDATA[ */var options_object = { "fx": "1", "collapsible": "", "cookie": "1", "spinner": "" };/* ]]> */
-            /* <![CDATA[ */var frm_js = { "ajax_url": "http:\/\/www.thefamilymap.org\/wp-admin\/admin-ajax.php", "images_url": "http:\/\/www.thefamilymap.org\/wp-content\/plugins\/formidable\/images", "loading": "Loading\u2026", "remove": "Remove", "offset": "4", "nonce": "ddb903ce6d", "id": "ID", "no_results": "No results match" };/* ]]> */
+                    /* <![CDATA[ */var options_object = { "fx": "1", "collapsible": "", "cookie": "1", "spinner": "" };/* ]]> */
+                    /* <![CDATA[ */var frm_js = { "ajax_url": "http:\/\/www.thefamilymap.org\/wp-admin\/admin-ajax.php", "images_url": "http:\/\/www.thefamilymap.org\/wp-content\/plugins\/formidable\/images", "loading": "Loading\u2026", "remove": "Remove", "offset": "4", "nonce": "ddb903ce6d", "id": "ID", "no_results": "No results match" };/* ]]> */
     </script>
 
     <script src="~/Scripts/Scripts.js"></script>
@@ -280,6 +280,7 @@
     </div>
 
     @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>

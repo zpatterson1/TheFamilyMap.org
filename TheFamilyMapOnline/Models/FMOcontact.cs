@@ -17,10 +17,9 @@ namespace TheFamilyMapOnline.Models
         public string Fname { get; set; }
         public string Lname { get; set; }
         public string AgencyName { get; set; }
-        public Nullable<int> Contact { get; set; }
         public string Addr { get; set; }
         public string City { get; set; }
-        public Nullable<int> States { get; set; }
+        public string States { get; set; }
         public string DirFname { get; set; }
         public string DirLame { get; set; }
         public string DirPhone { get; set; }
@@ -34,5 +33,6 @@ namespace TheFamilyMapOnline.Models
         public Nullable<int> BB_Level { get; set; }
         public Nullable<int> Interested { get; set; }
         public int ID { get; set; }
+        public Nullable<int> ContactNum { get; set; }
     }
 }

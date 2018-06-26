@@ -5,8 +5,14 @@ using System.Web;
 using System.Web.Mvc;
 using TheFamilyMapOnline.Models;
 using System.Data.Entity;
-using System.Linq;
 using System.Net;
+using System.Data;
+using System.Configuration;
+using SendGrid.Helpers.Mail;
+using SendGrid;
+using System.Threading.Tasks;
+using System.Net.Http;
+using System.Net.Mail;
 
 namespace TheFamilyMapOnline.Controllers
 {
@@ -17,7 +23,7 @@ namespace TheFamilyMapOnline.Controllers
         public ActionResult Index()
         {
 
-            
+
             return View(db.FMOcontacts.ToList());
         }
 
@@ -28,6 +34,7 @@ namespace TheFamilyMapOnline.Controllers
         }
 
         // GET: AgenContact/Create
+        //[HttpGet]
         public ActionResult Create()
         {
             return View();
@@ -35,19 +42,49 @@ namespace TheFamilyMapOnline.Controllers
 
         // POST: AgenContact/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        //[ValidateAntiForgeryToken]
+        public ActionResult Create([Bind(Include = "Fname,	Lname,	AgencyName,	ContactNum, States,	Addr, City, DirFname, DirLame,	DirPhone,	DirEmail,	NumOfSites,	ProgramType,	NumOfPrenatalChild,	NumOfInfantChild,	NumOfPreschoolChild,	BetterBeginingRated,	BB_Level,	Interested")]FMOcontact contact)
         {
             try
             {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
+                if (ModelState.IsValid)
+                {
+                    db.FMOcontacts.Add(contact);
+                    db.SaveChanges();
+                    sendemail(contact);
+                    //return RedirectToAction("Index");
+                }
             }
-            catch
+            catch (DataException /* dex */)
             {
-                return View();
+                //Log the error (uncomment dex variable name and add a line here to write a log.
+                ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists see your system administrator.");
             }
+            return View(contact);
         }
+
+        private void sendemail(FMOcontact contact)
+        {
+
+            var APIKeyName = "SendGridAPIKey";
+            string apiKey = ConfigurationManager.AppSettings[APIKeyName];
+            if (string.IsNullOrEmpty(apiKey))
+            {
+                // not found.  Set it
+                throw new Exception(APIKeyName + " application setting not set for email configuration");
+            }
+            var myMessage = new SendGridMessage();
+            myMessage.AddTo(new EmailAddress("zpatterson@uams.edu"));
+            myMessage.From = new EmailAddress("support@thefamilymap.org", "Family Map Support");
+            myMessage.Subject = "test message";
+            myMessage.PlainTextContent = "Contact created:" + contact.AgencyName;//use model vars to fill message 
+            //myMessage.HtmlContent = message.Body;
+            var client = new SendGridClient(apiKey);
+            client.SendEmailAsync(myMessage).Wait();
+            return;
+
+        }
+
 
         // GET: AgenContact/Edit/5
         public ActionResult Edit(int id)
