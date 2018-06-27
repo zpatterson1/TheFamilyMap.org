@@ -28,7 +28,7 @@
         </div>
         @using (Html.BeginForm("Create", "AgenContact", FormMethod.Post))
         {
-            <div class="container">
+            <div id="agenContact" class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-5">
                         <div class="form-group">
@@ -40,7 +40,13 @@
                             <label>Last Name</label>
                             @Html.TextBoxFor(s => s.Lname, new { @class = "form-control" }) @Html.ValidationMessageFor(s => s.Lname)
                             <span id="director" class="btn btn-xs btn-light" style="margin-top:3px;">Im a director (click once)</span>
+                        </div>    
+                        <div class="form-group">
+                            <input id="checkbox1" type="checkbox" /> 
+                            <label for="checkbox1">I'm a director</label>
+
                         </div>
+
                         <div class="form-group">
                             <label>Agency Name</label>
                             @Html.TextBoxFor(s => s.AgencyName, new { @class = "form-control" }) @Html.ValidationMessageFor(s => s.AgencyName)

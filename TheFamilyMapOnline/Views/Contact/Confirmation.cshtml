@@ -1,0 +1,41 @@
+﻿@model TheFamilyMapOnline.Models.Contact
+
+@{
+    ViewBag.Title = "Confirmation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!doctype html>
+<html>
+<body id="contact_us">
+    <div id="content">
+        <div class="left">
+            <div id="spotlights">
+                <div id="lets-get-started">
+                    <a href="~/AgenContact/Create" title="Let's Get Started - Join The Family Map Today!">Let's Get Started - Join The Family Map</a>
+                </div>
+                <div id="testimonialssp">
+                    <a href="~/clientsTestimonials/Clients" title="People Are Talking - Hear what our clients and partners have to say about The Family Map.">People Are Talking - Hear what our clients and partners have to say about The Family Map.</a>
+                </div>
+            </div>
+        </div>
+        <div class="rcontent right">
+            <div id="confirmMsg">
+                <h1>Your Message Has Been Sent!<span class="glyphicon glyphicon-ok text-success"></span></h1>
+                @*<p class="text-success">Success!</p>*@
+                <p class="text-xl-left"><b style="font-size:1.2em;">Thank you, @Model.Name!</b><br /> <br />A Family Map representative will be with your shortly.</p><br />
+                <p class="text-muted">Message: @Model.Message</p>
+            </div><br /><br /><hr /><br />
+            <div class="frm_scroll_box">
+                <h3 class="text-xl-left text-info" style="font-size: 1.5em;">In The Meantime...</h3>
+                <p class="text-muted">
+                    Check our the rest of our site!<br />
+                    There are lots of awesome pages just wating for you to see!
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

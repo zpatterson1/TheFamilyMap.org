@@ -7,6 +7,12 @@ namespace TheFamilyMapOnline.Models
 {
     public class Contact
     {
+        public string Name { get; set; }
+        public string AgencyName { get; set; }
+        public string Email { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string Message { get; set; }
         //public class
     }
     // GET & SET: The Username and passwword from user.

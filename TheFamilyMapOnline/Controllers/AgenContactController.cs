@@ -51,7 +51,7 @@ namespace TheFamilyMapOnline.Controllers
                 {
                     db.FMOcontacts.Add(contact);
                     db.SaveChanges();
-                    sendemail(contact);
+                    //sendemail(contact);
                     //return RedirectToAction("Index");
                 }
             }
@@ -63,27 +63,27 @@ namespace TheFamilyMapOnline.Controllers
             return View(contact);
         }
 
-        private void sendemail(FMOcontact contact)
-        {
+        //private void sendemail(FMOcontact contact)
+        //{
 
-            var APIKeyName = "SendGridAPIKey";
-            string apiKey = ConfigurationManager.AppSettings[APIKeyName];
-            if (string.IsNullOrEmpty(apiKey))
-            {
-                // not found.  Set it
-                throw new Exception(APIKeyName + " application setting not set for email configuration");
-            }
-            var myMessage = new SendGridMessage();
-            myMessage.AddTo(new EmailAddress("zpatterson@uams.edu"));
-            myMessage.From = new EmailAddress("support@thefamilymap.org", "Family Map Support");
-            myMessage.Subject = "test message";
-            myMessage.PlainTextContent = "Contact created:" + contact.AgencyName;//use model vars to fill message 
-            //myMessage.HtmlContent = message.Body;
-            var client = new SendGridClient(apiKey);
-            client.SendEmailAsync(myMessage).Wait();
-            return;
+        //    var APIKeyName = "SendGridAPIKey";
+        //    string apiKey = ConfigurationManager.AppSettings[APIKeyName];
+        //    if (string.IsNullOrEmpty(apiKey))
+        //    {
+        //        // not found.  Set it
+        //        throw new Exception(APIKeyName + " application setting not set for email configuration");
+        //    }
+        //    var myMessage = new SendGridMessage();
+        //    myMessage.AddTo(new EmailAddress("zpatterson@uams.edu"));
+        //    myMessage.From = new EmailAddress("support@thefamilymap.org", "Family Map Support");
+        //    myMessage.Subject = "test message";
+        //    myMessage.PlainTextContent = "Contact created:" + contact.AgencyName;//use model vars to fill message 
+        //    //myMessage.HtmlContent = message.Body;
+        //    var client = new SendGridClient(apiKey);
+        //    client.SendEmailAsync(myMessage).Wait();
+        //    return;
 
-        }
+        //}
 
 
         // GET: AgenContact/Edit/5
